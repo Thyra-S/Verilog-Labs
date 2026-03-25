@@ -1,0 +1,8 @@
+module two_bit_computer(
+	input wire A[1:0],
+	input wire B[1:0],
+	input wire I[1:0],
+	output wire F[1:0]
+);
+
+assign f[1] = (

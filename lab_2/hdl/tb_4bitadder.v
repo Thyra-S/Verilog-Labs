@@ -1,0 +1,66 @@
+module tb_4bitadder;
+
+`define STEP 10
+
+reg [3:0] a,b;
+wire [3:0] sum;
+wire cout;
+
+// ripplecarry4bit fourbitadder(
+// 	.a(a),
+// 	.b(b),
+// 	.cin(0),
+// 	.sum(sum),
+// 	.cout(cout)
+// );
+
+carrylookahead4bit fourbitadder(
+	.a(a),
+	.b(b),
+	.cin(0),
+	.sum(sum),
+	.cout(cout)
+);
+
+reg [7:0] test_vector;
+reg [3:0] expected_sum;
+reg expected_carry;
+integer i;
+integer errors = 0;
+
+
+// 5. Initial block with for loop
+initial begin
+// Print header
+$display("Time(ns)\ta\tb\tsum\tcarry\tExpected\tStatus");
+$display("--------\t-\t-\t---\t-----\t--------\t------");
+
+// Test all combinations using a for loop
+for (i = 0; i < 256; i = i + 1) begin
+    // Convert loop index to test inputs
+    test_vector = i[7:0];
+
+    a = test_vector[7:4];
+    b = test_vector[3:0];
+    // Calculate expected results
+    expected_sum = a + b;
+	
+    // Wait for circuit to settle
+    #(`STEP);
+    // Check and display results
+    if ((sum === expected_sum) ) //&& (cout === expected_carry)
+        $display("%0d\t%b\t%b\t%b\t%b\t%b%b\t\tPASS",
+        $time, a, b, sum, cout, expected_sum, expected_carry);
+    else begin
+        $display("%0d\t%b\t%b\t%b\t%b\t%b%b\t\tFAIL",
+        $time, a, b, sum, cout, expected_sum, expected_carry);
+    errors = errors + 1;
+    end
+end
+// Display final test results
+    $display("\nSimulation completed with %0d errors", errors);
+    $finish;
+    
+end
+endmodule
+

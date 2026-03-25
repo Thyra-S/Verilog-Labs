@@ -1,0 +1,11 @@
+module counter(
+    input wire clk,
+    input wire [3:0] num_in,
+    input wire [3:0] num_out
+);
+
+always @(posedge clk) begin // Once every clock cycle on the posedge, increase the count by one
+    count <= count + 1;
+end
+
+endmodule

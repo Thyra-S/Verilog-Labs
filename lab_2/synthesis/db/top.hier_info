@@ -1,0 +1,237 @@
+|carrylookahead8bit
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => wc[0].IN1
+sum[0] <= fulladder:adder0.sum
+sum[1] <= fulladder:adder1.sum
+sum[2] <= fulladder:adder2.sum
+sum[3] <= fulladder:adder3.sum
+sum[4] <= fulladder:adder4.sum
+sum[5] <= fulladder:adder5.sum
+sum[6] <= fulladder:adder6.sum
+sum[7] <= fulladder:adder7.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder0
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder0|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder0|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder1|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder1|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder2|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder2|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder3|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder3|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder4
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder4|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder4|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder5
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder5|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder5|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder6
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder6|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder6|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder7
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder7|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrylookahead8bit|fulladder:adder7|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

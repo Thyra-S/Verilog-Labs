@@ -1,0 +1,70 @@
+`timescale 1ns / 1ps
+
+module tb_top_counter;
+
+    reg start;
+    reg stop;
+    reg reset;
+    reg clk;
+
+    wire [6:0] seven_seg;
+    wire [3:0] seven_seg_num;
+
+    integer i, error;
+
+    // 3. Instantiate the Unit Under Test (UUT)
+    top uut (
+        .start(start),
+        .stop(stop),
+        .reset(reset),
+        .clk(clk),
+        .seven_seg(seven_seg),
+        .seven_seg_num(seven_seg_num)
+    );
+
+    always #10 clk = ~clk;
+
+    initial begin
+        // Initialize all inputs to 0, but set reset to 1
+        clk = 0;
+        start = 0;
+        stop = 0;
+		error = 0;
+        reset = 1;
+        
+        #(500);
+        reset = 0;
+        for(i = 0; i <20; i = i +1) begin
+            // Wait 50 ns, then simulate pressing the 'start' button
+            #50;
+            start = 1;
+            #20;        // Hold the button for 20ns (one clock cycle)
+            start = 0;  // Release the button
+
+            #(600);
+
+            // Simulate pressing the 'stop' button
+            stop = 1;
+            #20;        // Hold for one clock cycle
+            stop = 0;   // Release
+
+            // Wait to verify that the counting has actually stopped
+            #(500);
+        end
+
+        reset = 1;
+        
+        #(500);
+        reset = 0;
+        // Let it count a bit more, then end the simulation
+        $finish;
+
+    end
+
+    // Optional: Print output to the console whenever seven_seg changes
+    initial begin
+        $monitor("Time=%0t | Reset=%b | Start=%b | Stop=%b | SevenSeg=%b | SevenSegNum=%b", 
+                 $time, reset, start, stop, seven_seg, seven_seg_num);
+    end
+
+endmodule

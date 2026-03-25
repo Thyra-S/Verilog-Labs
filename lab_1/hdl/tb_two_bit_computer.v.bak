@@ -1,0 +1,5 @@
+module tb_two_bit_computer();
+
+reg A1,A0,B1,B0,I1,I0;
+wire F1,F0;
+

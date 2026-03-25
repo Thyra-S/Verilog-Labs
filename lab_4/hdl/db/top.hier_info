@@ -1,0 +1,98 @@
+|top
+start => startreg.DATAA
+stop => stopreg.DATAA
+reset => reset.IN1
+clk => clk.IN1
+seven_seg[6] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg[5] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg[4] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg[3] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg[2] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg[1] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg[0] <= bcd_to_sev_seg:numtosevenseg.seven_seg
+seven_seg_num[0] <= seven_seg_num[0].DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_num[1] <= seven_seg_num[1].DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_num[2] <= seven_seg_num[2].DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_num[3] <= seven_seg_num[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|clk_divider:clock_divider
+clk => slw_clk~reg0.CLK
+clk => dividing_num[0].CLK
+clk => dividing_num[1].CLK
+clk => dividing_num[2].CLK
+clk => dividing_num[3].CLK
+clk => dividing_num[4].CLK
+clk => dividing_num[5].CLK
+clk => dividing_num[6].CLK
+clk => dividing_num[7].CLK
+clk => dividing_num[8].CLK
+clk => dividing_num[9].CLK
+clk => dividing_num[10].CLK
+clk => dividing_num[11].CLK
+clk => dividing_num[12].CLK
+clk => dividing_num[13].CLK
+clk => dividing_num[14].CLK
+clk => dividing_num[15].CLK
+clk => dividing_num[16].CLK
+clk => dividing_num[17].CLK
+clk => dividing_num[18].CLK
+clk => dividing_num[19].CLK
+clk => dividing_num[20].CLK
+clk => dividing_num[21].CLK
+clk => dividing_num[22].CLK
+clk => dividing_num[23].CLK
+clk => dividing_num[24].CLK
+clk => dividing_num[25].CLK
+clk => dividing_num[26].CLK
+slw_clk <= slw_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|counter:count
+num_in[0] => Add0.IN8
+num_in[0] => Equal0.IN1
+num_in[1] => Add0.IN7
+num_in[1] => Equal0.IN31
+num_in[2] => Add0.IN6
+num_in[2] => Equal0.IN30
+num_in[3] => Add0.IN5
+num_in[3] => Equal0.IN0
+num_out[0] <= num_out.DB_MAX_OUTPUT_PORT_TYPE
+num_out[1] <= num_out.DB_MAX_OUTPUT_PORT_TYPE
+num_out[2] <= num_out.DB_MAX_OUTPUT_PORT_TYPE
+num_out[3] <= num_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|dflipflop:dff4bit
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+r => q.OUTPUTSELECT
+r => q.OUTPUTSELECT
+r => q.OUTPUTSELECT
+r => q.OUTPUTSELECT
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|bcd_to_sev_seg:numtosevenseg
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seven_seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

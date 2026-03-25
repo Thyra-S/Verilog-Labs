@@ -1,0 +1,27 @@
+|two_bit_computer
+A[0] => F.IN0
+A[0] => F.IN0
+A[0] => F.IN0
+A[0] => F.IN1
+A[1] => F.IN0
+A[1] => F.IN0
+A[1] => F.IN0
+A[1] => F.IN1
+B[0] => F.IN1
+B[0] => F.IN1
+B[0] => F.IN1
+B[1] => F.IN1
+B[1] => F.IN1
+B[1] => F.IN1
+I[0] => F.IN0
+I[0] => F.IN0
+I[0] => F.IN0
+I[0] => F.IN0
+I[1] => F.IN1
+I[1] => F.IN1
+I[1] => F.IN1
+I[1] => F.IN1
+F[0] << F.DB_MAX_OUTPUT_PORT_TYPE
+F[1] << F.DB_MAX_OUTPUT_PORT_TYPE
+
+

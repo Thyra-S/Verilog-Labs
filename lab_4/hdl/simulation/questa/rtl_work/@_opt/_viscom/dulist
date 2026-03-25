@@ -1,0 +1,6 @@
+1 11 clk_divider 4 fast 63 C:/Users/thyse/ECE3700Labs/lab_4/hdl/simulation/questa/rtl_work 0 0 0 0 29 0
+1 7 counter 4 fast 63 C:/Users/thyse/ECE3700Labs/lab_4/hdl/simulation/questa/rtl_work 0 0 0 0 18 0
+1 9 dflipflop 4 fast 63 C:/Users/thyse/ECE3700Labs/lab_4/hdl/simulation/questa/rtl_work 0 0 0 0 21 0
+1 14 bcd_to_sev_seg 4 fast 63 C:/Users/thyse/ECE3700Labs/lab_4/hdl/simulation/questa/rtl_work 0 0 0 0 43 0
+1 3 top 4 fast 63 C:/Users/thyse/ECE3700Labs/lab_4/hdl/simulation/questa/rtl_work 0 0 180224 0 77 0
+1 14 tb_top_counter 4 fast 63 C:/Users/thyse/ECE3700Labs/lab_4/hdl/simulation/questa/rtl_work 0 0 0 0 111 0

@@ -1,0 +1,68 @@
+module tb_4bitcomp;
+
+`define STEP 10
+
+reg [3:0] A,B;
+wire F1, F2, F3;
+reg C;
+
+comparator_4bit compare(
+    .A(A),
+    .B(B),
+    .C(C),
+    .F1(F1),
+    .F2(F2),
+    .F3(F3)
+);
+
+reg [8:0] test_vector;
+reg expected_f1, expected_f2, expected_f3;
+integer i, errors;
+
+
+
+// 5. Initial block with for loop
+initial begin
+// Print header
+$display("Time(ns)\ta\tb\tsum\tcarry\tExpected\tStatus");
+$display("--------\t-\t-\t---\t-----\t--------\t------");
+errors = 0;
+// Test all combinations using a for loop
+for (i = 0; i < 512; i = i + 1) begin
+    // Convert loop index to test inputs
+    test_vector = i[8:0];
+
+    A = test_vector[7:4];
+    B = test_vector[3:0];
+    C = test_vector[8];
+    // Calculate expected results
+    if(C) begin
+        // Use $signed() for signed comparisons
+        expected_f1 = $signed(A) > $signed(B);
+        expected_f2 = $signed(A) == $signed(B);
+        expected_f3 = $signed(A) < $signed(B);
+    end else begin
+        expected_f1 = A > B;
+        expected_f2 = A == B; 
+        expected_f3 = A < B;
+   end
+	
+    // Wait for circuit to settle
+    #(`STEP);
+    // Check and display results
+    if ((F1 ===expected_f1 && F2 === expected_f2 && F3 === expected_f3))
+        $display("%0d\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t\tPASS",
+        $time, A, B, C, F1, F2, F3, expected_f1,expected_f2,expected_f3);
+    else begin
+        $display("%0d\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t\tFAIL",
+        $time, A, B, C, F1, F2, F3, expected_f1,expected_f2,expected_f3);
+    errors = errors + 1;
+    end
+end
+// Display final test results
+    $display("\nSimulation completed with %0d errors", errors);
+    $finish;
+    
+end
+endmodule
+

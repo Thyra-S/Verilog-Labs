@@ -1,0 +1,42 @@
+|top
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+C => C.IN1
+F1 << comparator_4bit:compare.F1
+F2 << comparator_4bit:compare.F2
+F3 << comparator_4bit:compare.F3
+
+
+|top|comparator_4bit:compare
+A[0] => Add0.IN8
+A[0] => Add1.IN10
+A[1] => Add0.IN7
+A[1] => Add1.IN9
+A[2] => Add0.IN6
+A[2] => Add1.IN8
+A[3] => Add0.IN5
+A[3] => Add1.IN6
+A[3] => Add1.IN7
+B[0] => Add0.IN4
+B[0] => Add1.IN5
+B[1] => Add0.IN3
+B[1] => Add1.IN4
+B[2] => Add0.IN2
+B[2] => Add1.IN3
+B[3] => Add0.IN1
+B[3] => Add1.IN1
+B[3] => Add1.IN2
+C => F2.OUTPUTSELECT
+C => F1.OUTPUTSELECT
+C => F3.OUTPUTSELECT
+F1 <= F1.DB_MAX_OUTPUT_PORT_TYPE
+F2 <= F2.DB_MAX_OUTPUT_PORT_TYPE
+F3 <= F3.DB_MAX_OUTPUT_PORT_TYPE
+
+

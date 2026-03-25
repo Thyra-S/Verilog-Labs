@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at tb_two_bit_computer.v(3): object "I" differs only in case from object "i" in the same scope File: C:/Users/thyse/ECE3700Labs/lab_1/hdl/tb_two_bit_computer.v Line: 3

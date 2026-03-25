@@ -1,0 +1,36 @@
+module top(
+    input wire start,
+    input wire stop,
+    input wire reset,
+    input wire clk,
+    output reg [6:0] seven_seg
+);
+
+    reg slw_clk;
+    reg [4:0] current_num, next_num, seven_seg_num;
+
+
+    clk_divider clock_divider(
+        .clk(clk),
+        .slw_clk(slw_clk)
+    );
+
+    counter count(
+        .clk(slw_clk),
+        .num_in(current_num),
+        .num_out(next_num)
+    );
+
+    dflipflop dff4bit(
+        .clk(slw_clk),
+        .r(reset),
+        .d(next_num),
+        .q(seven_seg_num)
+    );
+
+    bcd_to_sev_seg numtosevenseg(
+        .bcd(seven_seg_num),
+        .seven_seg(seven_seg)
+    );
+
+endmodule

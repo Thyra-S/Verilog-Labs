@@ -1,0 +1,258 @@
+# Reading pref.tcl
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Altera Starter FPGA Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
+# vmap work rtl_work 
+# ** Note: (vmap-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# Copying c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl {C:/Users/thyse/ECE3700Labs/lab_4/hdl/top.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 09:09:29 on Mar 25,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl" C:/Users/thyse/ECE3700Labs/lab_4/hdl/top.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 09:09:29 on Mar 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl {C:/Users/thyse/ECE3700Labs/lab_4/hdl/dflipflop.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 09:09:29 on Mar 25,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl" C:/Users/thyse/ECE3700Labs/lab_4/hdl/dflipflop.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module dflipflop
+# 
+# Top level modules:
+# 	dflipflop
+# End time: 09:09:29 on Mar 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl {C:/Users/thyse/ECE3700Labs/lab_4/hdl/counter.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 09:09:29 on Mar 25,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl" C:/Users/thyse/ECE3700Labs/lab_4/hdl/counter.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 09:09:29 on Mar 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl {C:/Users/thyse/ECE3700Labs/lab_4/hdl/clk_divider.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 09:09:29 on Mar 25,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl" C:/Users/thyse/ECE3700Labs/lab_4/hdl/clk_divider.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 09:09:29 on Mar 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl {C:/Users/thyse/ECE3700Labs/lab_4/hdl/bcd_to_seven_seg.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 09:09:29 on Mar 25,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl" C:/Users/thyse/ECE3700Labs/lab_4/hdl/bcd_to_seven_seg.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module bcd_to_sev_seg
+# 
+# Top level modules:
+# 	bcd_to_sev_seg
+# End time: 09:09:29 on Mar 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl {C:/Users/thyse/ECE3700Labs/lab_4/hdl/tb_top_counter.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 09:09:29 on Mar 25,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_4/hdl" C:/Users/thyse/ECE3700Labs/lab_4/hdl/tb_top_counter.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module tb_top_counter
+# 
+# Top level modules:
+# 	tb_top_counter
+# End time: 09:09:29 on Mar 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_top_counter
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_top_counter 
+# Start time: 09:09:30 on Mar 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top_counter(fast)
+# Loading work.top(fast)
+# Loading work.clk_divider(fast)
+# Loading work.counter(fast)
+# Loading work.dflipflop(fast)
+# Loading work.bcd_to_sev_seg(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=0 | Reset=1 | Start=0 | Stop=0 | SevenSeg=xxxxxxx | SevenSegNum=xxxx
+# Time=110000 | Reset=1 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=500000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=550000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=570000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=590000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=830000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=1070000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=1170000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=1190000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=1740000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=1760000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=1790000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=2030000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=2270000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=2360000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=2380000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=2930000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=2950000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=2990000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=3230000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=3470000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=3550000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=3570000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=4120000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=4140000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=4190000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=4430000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=4670000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=4740000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=4760000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=5310000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=5330000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=5390000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=5630000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=5870000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=5930000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=5950000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=6500000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=6520000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=6590000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=6830000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=7070000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=7120000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=7140000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=7690000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=7710000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=7790000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=8030000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=8270000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=8310000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=8330000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=8880000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=8900000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=8990000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=9230000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=9470000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=9500000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=9520000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=10070000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=10090000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=10190000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=10430000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=10670000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=10690000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=10710000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=11260000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=11280000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=11390000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=11630000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=11870000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=11880000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=11900000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=12450000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=12470000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=12590000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=12830000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=13070000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=13090000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=13640000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=13660000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=13790000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=14030000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=14260000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=14270000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=14280000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=14830000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=14850000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=14990000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=15230000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=15450000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=15470000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=16020000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=16040000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=16190000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=16430000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=16640000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=16660000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=17210000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=17230000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=17390000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=17630000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=17830000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=17850000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=18400000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=18420000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=18590000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000110 | SevenSegNum=0011
+# Time=18830000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=19020000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=19040000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=19590000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=19610000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001100 | SevenSegNum=0100
+# Time=19790000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100100 | SevenSegNum=0101
+# Time=20030000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=20210000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=20230000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=20780000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=20800000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0100000 | SevenSegNum=0110
+# Time=20990000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001111 | SevenSegNum=0111
+# Time=21230000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=21400000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=21420000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=21970000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=21990000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000000 | SevenSegNum=1000
+# Time=22190000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0001100 | SevenSegNum=1001
+# Time=22430000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=22590000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=22610000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=23160000 | Reset=0 | Start=1 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=23180000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# Time=23390000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=1001111 | SevenSegNum=0001
+# Time=23630000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=23780000 | Reset=0 | Start=0 | Stop=1 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=23800000 | Reset=0 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=24300000 | Reset=1 | Start=0 | Stop=0 | SevenSeg=0010010 | SevenSegNum=0010
+# Time=24350000 | Reset=1 | Start=0 | Stop=0 | SevenSeg=0000001 | SevenSegNum=0000
+# ** Note: $finish    : C:/Users/thyse/ECE3700Labs/lab_4/hdl/tb_top_counter.v(60)
+#    Time: 24800 ns  Iteration: 0  Instance: /tb_top_counter
+# 1
+# Break in Module tb_top_counter at C:/Users/thyse/ECE3700Labs/lab_4/hdl/tb_top_counter.v line 60
+# End time: 09:24:44 on Mar 25,2026, Elapsed time: 0:15:14
+# Errors: 0, Warnings: 1
