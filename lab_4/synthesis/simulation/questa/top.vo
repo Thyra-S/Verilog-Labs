@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition"
 
-// DATE "03/25/2026 08:56:01"
+// DATE "03/25/2026 13:49:11"
 
 // 
 // Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -44,20 +44,20 @@ output 	[0:6] seven_seg;
 output 	[3:0] seven_seg_num;
 
 // Design Ports Information
-// seven_seg[6]	=>  Location: PIN_C17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg[5]	=>  Location: PIN_D17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg[4]	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg[3]	=>  Location: PIN_C16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg[2]	=>  Location: PIN_C15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg[1]	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg[0]	=>  Location: PIN_C14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg_num[0]	=>  Location: PIN_A8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg_num[1]	=>  Location: PIN_A9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg_num[2]	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// seven_seg_num[3]	=>  Location: PIN_B10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reset	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// clk	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// start	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[6]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[5]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[4]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[3]	=>  Location: PIN_B12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[2]	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[1]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg[0]	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg_num[0]	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg_num[1]	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg_num[2]	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// seven_seg_num[3]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_J11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// start	=>  Location: PIN_C12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // stop	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
@@ -89,16 +89,8 @@ wire \seven_seg_num[2]~output_o ;
 wire \seven_seg_num[3]~output_o ;
 wire \clk~input_o ;
 wire \clk~inputclkctrl_outclk ;
-wire \clock_divider|Add0~0_combout ;
-wire \clock_divider|Add0~5 ;
-wire \clock_divider|Add0~6_combout ;
-wire \clock_divider|Add0~7 ;
-wire \clock_divider|Add0~8_combout ;
-wire \clock_divider|Add0~9 ;
-wire \clock_divider|Add0~10_combout ;
 wire \clock_divider|Add0~11 ;
 wire \clock_divider|Add0~12_combout ;
-wire \clock_divider|dividing_num~8_combout ;
 wire \clock_divider|Add0~13 ;
 wire \clock_divider|Add0~14_combout ;
 wire \clock_divider|Add0~15 ;
@@ -109,61 +101,59 @@ wire \clock_divider|Add0~19 ;
 wire \clock_divider|Add0~20_combout ;
 wire \clock_divider|Add0~21 ;
 wire \clock_divider|Add0~22_combout ;
-wire \clock_divider|dividing_num~10_combout ;
 wire \clock_divider|Add0~23 ;
 wire \clock_divider|Add0~24_combout ;
-wire \clock_divider|dividing_num~11_combout ;
 wire \clock_divider|Add0~25 ;
 wire \clock_divider|Add0~26_combout ;
-wire \clock_divider|dividing_num~12_combout ;
 wire \clock_divider|Add0~27 ;
 wire \clock_divider|Add0~28_combout ;
-wire \clock_divider|dividing_num~13_combout ;
 wire \clock_divider|Add0~29 ;
 wire \clock_divider|Add0~30_combout ;
 wire \clock_divider|Add0~31 ;
 wire \clock_divider|Add0~32_combout ;
-wire \clock_divider|dividing_num~14_combout ;
 wire \clock_divider|Add0~33 ;
 wire \clock_divider|Add0~34_combout ;
 wire \clock_divider|Add0~35 ;
+wire \clock_divider|Add0~36_combout ;
 wire \clock_divider|Add0~37 ;
 wire \clock_divider|Add0~38_combout ;
-wire \clock_divider|dividing_num~16_combout ;
+wire \clock_divider|Equal0~5_combout ;
 wire \clock_divider|Add0~39 ;
 wire \clock_divider|Add0~40_combout ;
-wire \clock_divider|dividing_num~17_combout ;
 wire \clock_divider|Add0~41 ;
 wire \clock_divider|Add0~42_combout ;
-wire \clock_divider|dividing_num~18_combout ;
 wire \clock_divider|Add0~43 ;
 wire \clock_divider|Add0~44_combout ;
-wire \clock_divider|dividing_num~19_combout ;
 wire \clock_divider|Add0~45 ;
 wire \clock_divider|Add0~46_combout ;
 wire \clock_divider|Add0~47 ;
 wire \clock_divider|Add0~48_combout ;
-wire \clock_divider|dividing_num~20_combout ;
 wire \clock_divider|Add0~49 ;
 wire \clock_divider|Add0~50_combout ;
 wire \clock_divider|Add0~51 ;
 wire \clock_divider|Add0~52_combout ;
 wire \clock_divider|Equal0~6_combout ;
 wire \clock_divider|Equal0~7_combout ;
-wire \clock_divider|dividing_num~9_combout ;
+wire \clock_divider|Add0~0_combout ;
 wire \clock_divider|Add0~1 ;
 wire \clock_divider|Add0~2_combout ;
+wire \clock_divider|dividing_num~1_combout ;
 wire \clock_divider|Add0~3 ;
 wire \clock_divider|Add0~4_combout ;
+wire \clock_divider|dividing_num~0_combout ;
+wire \clock_divider|Add0~5 ;
+wire \clock_divider|Add0~6_combout ;
+wire \clock_divider|Add0~7 ;
+wire \clock_divider|Add0~8_combout ;
+wire \clock_divider|Add0~9 ;
+wire \clock_divider|Add0~10_combout ;
 wire \clock_divider|Equal0~1_combout ;
-wire \clock_divider|Equal0~3_combout ;
-wire \clock_divider|Equal0~2_combout ;
 wire \clock_divider|Equal0~0_combout ;
+wire \clock_divider|Equal0~2_combout ;
+wire \clock_divider|Equal0~3_combout ;
 wire \clock_divider|Equal0~4_combout ;
-wire \clock_divider|Add0~36_combout ;
-wire \clock_divider|dividing_num~15_combout ;
-wire \clock_divider|Equal0~5_combout ;
 wire \clock_divider|slw_clk~0_combout ;
+wire \clock_divider|slw_clk~feeder_combout ;
 wire \clock_divider|slw_clk~q ;
 wire \clock_divider|slw_clk~clkctrl_outclk ;
 wire \reset~input_o ;
@@ -177,11 +167,11 @@ wire \stopreg~q ;
 wire \running~0_combout ;
 wire \running~q ;
 wire \dff4bit|q[3]~1_combout ;
+wire \dff4bit|q~3_combout ;
 wire \dff4bit|q~4_combout ;
+wire \dff4bit|q[3]~2_combout ;
 wire \count|Add0~0_combout ;
 wire \dff4bit|q~5_combout ;
-wire \dff4bit|q[3]~2_combout ;
-wire \dff4bit|q~3_combout ;
 wire \numtosevenseg|WideOr6~0_combout ;
 wire \numtosevenseg|WideOr5~0_combout ;
 wire \numtosevenseg|WideOr4~0_combout ;
@@ -215,7 +205,7 @@ defparam \~QUARTUS_CREATED_GND~I .lut_mask = 16'h0000;
 defparam \~QUARTUS_CREATED_GND~I .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: IOOBUF_X74_Y54_N23
+// Location: IOOBUF_X54_Y54_N2
 fiftyfivenm_io_obuf \seven_seg[6]~output (
 	.i(!\numtosevenseg|WideOr6~0_combout ),
 	.oe(vcc),
@@ -228,7 +218,7 @@ defparam \seven_seg[6]~output .bus_hold = "false";
 defparam \seven_seg[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X74_Y54_N16
+// Location: IOOBUF_X54_Y54_N9
 fiftyfivenm_io_obuf \seven_seg[5]~output (
 	.i(\numtosevenseg|WideOr5~0_combout ),
 	.oe(vcc),
@@ -241,7 +231,7 @@ defparam \seven_seg[5]~output .bus_hold = "false";
 defparam \seven_seg[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X74_Y54_N2
+// Location: IOOBUF_X51_Y54_N2
 fiftyfivenm_io_obuf \seven_seg[4]~output (
 	.i(\numtosevenseg|WideOr4~0_combout ),
 	.oe(vcc),
@@ -254,7 +244,7 @@ defparam \seven_seg[4]~output .bus_hold = "false";
 defparam \seven_seg[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X62_Y54_N30
+// Location: IOOBUF_X49_Y54_N2
 fiftyfivenm_io_obuf \seven_seg[3]~output (
 	.i(\numtosevenseg|WideOr3~0_combout ),
 	.oe(vcc),
@@ -267,7 +257,7 @@ defparam \seven_seg[3]~output .bus_hold = "false";
 defparam \seven_seg[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X60_Y54_N2
+// Location: IOOBUF_X51_Y54_N16
 fiftyfivenm_io_obuf \seven_seg[2]~output (
 	.i(\numtosevenseg|WideOr2~0_combout ),
 	.oe(vcc),
@@ -280,7 +270,7 @@ defparam \seven_seg[2]~output .bus_hold = "false";
 defparam \seven_seg[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X74_Y54_N9
+// Location: IOOBUF_X51_Y54_N9
 fiftyfivenm_io_obuf \seven_seg[1]~output (
 	.i(\numtosevenseg|WideOr1~0_combout ),
 	.oe(vcc),
@@ -293,7 +283,7 @@ defparam \seven_seg[1]~output .bus_hold = "false";
 defparam \seven_seg[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X58_Y54_N16
+// Location: IOOBUF_X49_Y54_N16
 fiftyfivenm_io_obuf \seven_seg[0]~output (
 	.i(\numtosevenseg|WideOr0~0_combout ),
 	.oe(vcc),
@@ -306,7 +296,7 @@ defparam \seven_seg[0]~output .bus_hold = "false";
 defparam \seven_seg[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X46_Y54_N2
+// Location: IOOBUF_X49_Y54_N9
 fiftyfivenm_io_obuf \seven_seg_num[0]~output (
 	.i(\dff4bit|q [0]),
 	.oe(vcc),
@@ -319,7 +309,7 @@ defparam \seven_seg_num[0]~output .bus_hold = "false";
 defparam \seven_seg_num[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X46_Y54_N23
+// Location: IOOBUF_X51_Y54_N30
 fiftyfivenm_io_obuf \seven_seg_num[1]~output (
 	.i(\dff4bit|q [1]),
 	.oe(vcc),
@@ -332,7 +322,7 @@ defparam \seven_seg_num[1]~output .bus_hold = "false";
 defparam \seven_seg_num[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X51_Y54_N16
+// Location: IOOBUF_X51_Y54_N23
 fiftyfivenm_io_obuf \seven_seg_num[2]~output (
 	.i(\dff4bit|q [2]),
 	.oe(vcc),
@@ -345,7 +335,7 @@ defparam \seven_seg_num[2]~output .bus_hold = "false";
 defparam \seven_seg_num[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X46_Y54_N9
+// Location: IOOBUF_X54_Y54_N23
 fiftyfivenm_io_obuf \seven_seg_num[3]~output (
 	.i(\dff4bit|q [3]),
 	.oe(vcc),
@@ -358,7 +348,7 @@ defparam \seven_seg_num[3]~output .bus_hold = "false";
 defparam \seven_seg_num[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y0_N29
+// Location: IOIBUF_X0_Y18_N15
 fiftyfivenm_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -370,7 +360,7 @@ defparam \clk~input .listen_to_nsleep_signal = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: CLKCTRL_G19
+// Location: CLKCTRL_G3
 fiftyfivenm_clkctrl \clk~inputclkctrl (
 	.ena(vcc),
 	.inclk({vcc,vcc,vcc,\clk~input_o }),
@@ -383,117 +373,7 @@ defparam \clk~inputclkctrl .clock_type = "global clock";
 defparam \clk~inputclkctrl .ena_register_mode = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N6
-fiftyfivenm_lcell_comb \clock_divider|Add0~0 (
-// Equation(s):
-// \clock_divider|Add0~0_combout  = \clock_divider|dividing_num [0] $ (VCC)
-// \clock_divider|Add0~1  = CARRY(\clock_divider|dividing_num [0])
-
-	.dataa(\clock_divider|dividing_num [0]),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(\clock_divider|Add0~0_combout ),
-	.cout(\clock_divider|Add0~1 ));
-// synopsys translate_off
-defparam \clock_divider|Add0~0 .lut_mask = 16'h55AA;
-defparam \clock_divider|Add0~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X71_Y37_N10
-fiftyfivenm_lcell_comb \clock_divider|Add0~4 (
-// Equation(s):
-// \clock_divider|Add0~4_combout  = (\clock_divider|dividing_num [2] & (\clock_divider|Add0~3  $ (GND))) # (!\clock_divider|dividing_num [2] & (!\clock_divider|Add0~3  & VCC))
-// \clock_divider|Add0~5  = CARRY((\clock_divider|dividing_num [2] & !\clock_divider|Add0~3 ))
-
-	.dataa(\clock_divider|dividing_num [2]),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(vcc),
-	.cin(\clock_divider|Add0~3 ),
-	.combout(\clock_divider|Add0~4_combout ),
-	.cout(\clock_divider|Add0~5 ));
-// synopsys translate_off
-defparam \clock_divider|Add0~4 .lut_mask = 16'hA50A;
-defparam \clock_divider|Add0~4 .sum_lutc_input = "cin";
-// synopsys translate_on
-
-// Location: LCCOMB_X71_Y37_N12
-fiftyfivenm_lcell_comb \clock_divider|Add0~6 (
-// Equation(s):
-// \clock_divider|Add0~6_combout  = (\clock_divider|dividing_num [3] & (!\clock_divider|Add0~5 )) # (!\clock_divider|dividing_num [3] & ((\clock_divider|Add0~5 ) # (GND)))
-// \clock_divider|Add0~7  = CARRY((!\clock_divider|Add0~5 ) # (!\clock_divider|dividing_num [3]))
-
-	.dataa(\clock_divider|dividing_num [3]),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(vcc),
-	.cin(\clock_divider|Add0~5 ),
-	.combout(\clock_divider|Add0~6_combout ),
-	.cout(\clock_divider|Add0~7 ));
-// synopsys translate_off
-defparam \clock_divider|Add0~6 .lut_mask = 16'h5A5F;
-defparam \clock_divider|Add0~6 .sum_lutc_input = "cin";
-// synopsys translate_on
-
-// Location: FF_X71_Y37_N13
-dffeas \clock_divider|dividing_num[3] (
-	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|Add0~6_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\clock_divider|dividing_num [3]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \clock_divider|dividing_num[3] .is_wysiwyg = "true";
-defparam \clock_divider|dividing_num[3] .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X71_Y37_N14
-fiftyfivenm_lcell_comb \clock_divider|Add0~8 (
-// Equation(s):
-// \clock_divider|Add0~8_combout  = (\clock_divider|dividing_num [4] & (\clock_divider|Add0~7  $ (GND))) # (!\clock_divider|dividing_num [4] & (!\clock_divider|Add0~7  & VCC))
-// \clock_divider|Add0~9  = CARRY((\clock_divider|dividing_num [4] & !\clock_divider|Add0~7 ))
-
-	.dataa(gnd),
-	.datab(\clock_divider|dividing_num [4]),
-	.datac(gnd),
-	.datad(vcc),
-	.cin(\clock_divider|Add0~7 ),
-	.combout(\clock_divider|Add0~8_combout ),
-	.cout(\clock_divider|Add0~9 ));
-// synopsys translate_off
-defparam \clock_divider|Add0~8 .lut_mask = 16'hC30C;
-defparam \clock_divider|Add0~8 .sum_lutc_input = "cin";
-// synopsys translate_on
-
-// Location: FF_X71_Y37_N15
-dffeas \clock_divider|dividing_num[4] (
-	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|Add0~8_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\clock_divider|dividing_num [4]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \clock_divider|dividing_num[4] .is_wysiwyg = "true";
-defparam \clock_divider|dividing_num[4] .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X71_Y37_N16
+// Location: LCCOMB_X66_Y51_N16
 fiftyfivenm_lcell_comb \clock_divider|Add0~10 (
 // Equation(s):
 // \clock_divider|Add0~10_combout  = (\clock_divider|dividing_num [5] & (!\clock_divider|Add0~9 )) # (!\clock_divider|dividing_num [5] & ((\clock_divider|Add0~9 ) # (GND)))
@@ -511,64 +391,28 @@ defparam \clock_divider|Add0~10 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~10 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N17
-dffeas \clock_divider|dividing_num[5] (
-	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|Add0~10_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\clock_divider|dividing_num [5]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \clock_divider|dividing_num[5] .is_wysiwyg = "true";
-defparam \clock_divider|dividing_num[5] .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X71_Y37_N18
+// Location: LCCOMB_X66_Y51_N18
 fiftyfivenm_lcell_comb \clock_divider|Add0~12 (
 // Equation(s):
 // \clock_divider|Add0~12_combout  = (\clock_divider|dividing_num [6] & (\clock_divider|Add0~11  $ (GND))) # (!\clock_divider|dividing_num [6] & (!\clock_divider|Add0~11  & VCC))
 // \clock_divider|Add0~13  = CARRY((\clock_divider|dividing_num [6] & !\clock_divider|Add0~11 ))
 
-	.dataa(\clock_divider|dividing_num [6]),
-	.datab(gnd),
+	.dataa(gnd),
+	.datab(\clock_divider|dividing_num [6]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~11 ),
 	.combout(\clock_divider|Add0~12_combout ),
 	.cout(\clock_divider|Add0~13 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~12 .lut_mask = 16'hA50A;
+defparam \clock_divider|Add0~12 .lut_mask = 16'hC30C;
 defparam \clock_divider|Add0~12 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N0
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~8 (
-// Equation(s):
-// \clock_divider|dividing_num~8_combout  = (\clock_divider|Add0~12_combout  & (((!\clock_divider|Equal0~5_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~7_combout )))
-
-	.dataa(\clock_divider|Equal0~7_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~5_combout ),
-	.datad(\clock_divider|Add0~12_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~8_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~8 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~8 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N1
+// Location: FF_X66_Y51_N19
 dffeas \clock_divider|dividing_num[6] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~8_combout ),
+	.d(\clock_divider|Add0~12_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -584,7 +428,7 @@ defparam \clock_divider|dividing_num[6] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[6] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N20
+// Location: LCCOMB_X66_Y51_N20
 fiftyfivenm_lcell_comb \clock_divider|Add0~14 (
 // Equation(s):
 // \clock_divider|Add0~14_combout  = (\clock_divider|dividing_num [7] & (!\clock_divider|Add0~13 )) # (!\clock_divider|dividing_num [7] & ((\clock_divider|Add0~13 ) # (GND)))
@@ -602,7 +446,7 @@ defparam \clock_divider|Add0~14 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~14 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N21
+// Location: FF_X66_Y51_N21
 dffeas \clock_divider|dividing_num[7] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~14_combout ),
@@ -621,25 +465,25 @@ defparam \clock_divider|dividing_num[7] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[7] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N22
+// Location: LCCOMB_X66_Y51_N22
 fiftyfivenm_lcell_comb \clock_divider|Add0~16 (
 // Equation(s):
 // \clock_divider|Add0~16_combout  = (\clock_divider|dividing_num [8] & (\clock_divider|Add0~15  $ (GND))) # (!\clock_divider|dividing_num [8] & (!\clock_divider|Add0~15  & VCC))
 // \clock_divider|Add0~17  = CARRY((\clock_divider|dividing_num [8] & !\clock_divider|Add0~15 ))
 
-	.dataa(gnd),
-	.datab(\clock_divider|dividing_num [8]),
+	.dataa(\clock_divider|dividing_num [8]),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~15 ),
 	.combout(\clock_divider|Add0~16_combout ),
 	.cout(\clock_divider|Add0~17 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~16 .lut_mask = 16'hC30C;
+defparam \clock_divider|Add0~16 .lut_mask = 16'hA50A;
 defparam \clock_divider|Add0~16 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N23
+// Location: FF_X66_Y51_N23
 dffeas \clock_divider|dividing_num[8] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~16_combout ),
@@ -658,7 +502,7 @@ defparam \clock_divider|dividing_num[8] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[8] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N24
+// Location: LCCOMB_X66_Y51_N24
 fiftyfivenm_lcell_comb \clock_divider|Add0~18 (
 // Equation(s):
 // \clock_divider|Add0~18_combout  = (\clock_divider|dividing_num [9] & (!\clock_divider|Add0~17 )) # (!\clock_divider|dividing_num [9] & ((\clock_divider|Add0~17 ) # (GND)))
@@ -676,7 +520,7 @@ defparam \clock_divider|Add0~18 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~18 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N25
+// Location: FF_X66_Y51_N25
 dffeas \clock_divider|dividing_num[9] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~18_combout ),
@@ -695,7 +539,7 @@ defparam \clock_divider|dividing_num[9] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[9] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N26
+// Location: LCCOMB_X66_Y51_N26
 fiftyfivenm_lcell_comb \clock_divider|Add0~20 (
 // Equation(s):
 // \clock_divider|Add0~20_combout  = (\clock_divider|dividing_num [10] & (\clock_divider|Add0~19  $ (GND))) # (!\clock_divider|dividing_num [10] & (!\clock_divider|Add0~19  & VCC))
@@ -713,7 +557,7 @@ defparam \clock_divider|Add0~20 .lut_mask = 16'hA50A;
 defparam \clock_divider|Add0~20 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N27
+// Location: FF_X66_Y51_N27
 dffeas \clock_divider|dividing_num[10] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~20_combout ),
@@ -732,7 +576,7 @@ defparam \clock_divider|dividing_num[10] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[10] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N28
+// Location: LCCOMB_X66_Y51_N28
 fiftyfivenm_lcell_comb \clock_divider|Add0~22 (
 // Equation(s):
 // \clock_divider|Add0~22_combout  = (\clock_divider|dividing_num [11] & (!\clock_divider|Add0~21 )) # (!\clock_divider|dividing_num [11] & ((\clock_divider|Add0~21 ) # (GND)))
@@ -750,27 +594,10 @@ defparam \clock_divider|Add0~22 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~22 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N2
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~10 (
-// Equation(s):
-// \clock_divider|dividing_num~10_combout  = (\clock_divider|Add0~22_combout  & (((!\clock_divider|Equal0~5_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~7_combout )))
-
-	.dataa(\clock_divider|Equal0~7_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~5_combout ),
-	.datad(\clock_divider|Add0~22_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~10_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~10 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~10 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N3
+// Location: FF_X66_Y51_N29
 dffeas \clock_divider|dividing_num[11] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~10_combout ),
+	.d(\clock_divider|Add0~22_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -786,45 +613,28 @@ defparam \clock_divider|dividing_num[11] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[11] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N30
+// Location: LCCOMB_X66_Y51_N30
 fiftyfivenm_lcell_comb \clock_divider|Add0~24 (
 // Equation(s):
 // \clock_divider|Add0~24_combout  = (\clock_divider|dividing_num [12] & (\clock_divider|Add0~23  $ (GND))) # (!\clock_divider|dividing_num [12] & (!\clock_divider|Add0~23  & VCC))
 // \clock_divider|Add0~25  = CARRY((\clock_divider|dividing_num [12] & !\clock_divider|Add0~23 ))
 
-	.dataa(gnd),
-	.datab(\clock_divider|dividing_num [12]),
+	.dataa(\clock_divider|dividing_num [12]),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~23 ),
 	.combout(\clock_divider|Add0~24_combout ),
 	.cout(\clock_divider|Add0~25 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~24 .lut_mask = 16'hC30C;
+defparam \clock_divider|Add0~24 .lut_mask = 16'hA50A;
 defparam \clock_divider|Add0~24 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N0
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~11 (
-// Equation(s):
-// \clock_divider|dividing_num~11_combout  = (\clock_divider|Add0~24_combout  & (((!\clock_divider|Equal0~7_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~5_combout )))
-
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Add0~24_combout ),
-	.datac(\clock_divider|Equal0~4_combout ),
-	.datad(\clock_divider|Equal0~7_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~11_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~11 .lut_mask = 16'h4CCC;
-defparam \clock_divider|dividing_num~11 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X71_Y37_N1
+// Location: FF_X66_Y51_N31
 dffeas \clock_divider|dividing_num[12] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~11_combout ),
+	.d(\clock_divider|Add0~24_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -840,7 +650,7 @@ defparam \clock_divider|dividing_num[12] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[12] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N0
+// Location: LCCOMB_X66_Y50_N0
 fiftyfivenm_lcell_comb \clock_divider|Add0~26 (
 // Equation(s):
 // \clock_divider|Add0~26_combout  = (\clock_divider|dividing_num [13] & (!\clock_divider|Add0~25 )) # (!\clock_divider|dividing_num [13] & ((\clock_divider|Add0~25 ) # (GND)))
@@ -858,27 +668,10 @@ defparam \clock_divider|Add0~26 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~26 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N28
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~12 (
-// Equation(s):
-// \clock_divider|dividing_num~12_combout  = (\clock_divider|Add0~26_combout  & (((!\clock_divider|Equal0~5_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~7_combout )))
-
-	.dataa(\clock_divider|Equal0~7_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~5_combout ),
-	.datad(\clock_divider|Add0~26_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~12_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~12 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~12 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X71_Y36_N29
+// Location: FF_X66_Y50_N1
 dffeas \clock_divider|dividing_num[13] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~12_combout ),
+	.d(\clock_divider|Add0~26_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -894,45 +687,28 @@ defparam \clock_divider|dividing_num[13] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[13] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N2
+// Location: LCCOMB_X66_Y50_N2
 fiftyfivenm_lcell_comb \clock_divider|Add0~28 (
 // Equation(s):
 // \clock_divider|Add0~28_combout  = (\clock_divider|dividing_num [14] & (\clock_divider|Add0~27  $ (GND))) # (!\clock_divider|dividing_num [14] & (!\clock_divider|Add0~27  & VCC))
 // \clock_divider|Add0~29  = CARRY((\clock_divider|dividing_num [14] & !\clock_divider|Add0~27 ))
 
-	.dataa(\clock_divider|dividing_num [14]),
-	.datab(gnd),
+	.dataa(gnd),
+	.datab(\clock_divider|dividing_num [14]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~27 ),
 	.combout(\clock_divider|Add0~28_combout ),
 	.cout(\clock_divider|Add0~29 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~28 .lut_mask = 16'hA50A;
+defparam \clock_divider|Add0~28 .lut_mask = 16'hC30C;
 defparam \clock_divider|Add0~28 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N30
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~13 (
-// Equation(s):
-// \clock_divider|dividing_num~13_combout  = (\clock_divider|Add0~28_combout  & (((!\clock_divider|Equal0~5_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~7_combout )))
-
-	.dataa(\clock_divider|Equal0~7_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~5_combout ),
-	.datad(\clock_divider|Add0~28_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~13_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~13 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~13 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X71_Y36_N31
+// Location: FF_X66_Y50_N3
 dffeas \clock_divider|dividing_num[14] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~13_combout ),
+	.d(\clock_divider|Add0~28_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -948,7 +724,7 @@ defparam \clock_divider|dividing_num[14] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[14] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N4
+// Location: LCCOMB_X66_Y50_N4
 fiftyfivenm_lcell_comb \clock_divider|Add0~30 (
 // Equation(s):
 // \clock_divider|Add0~30_combout  = (\clock_divider|dividing_num [15] & (!\clock_divider|Add0~29 )) # (!\clock_divider|dividing_num [15] & ((\clock_divider|Add0~29 ) # (GND)))
@@ -966,7 +742,7 @@ defparam \clock_divider|Add0~30 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~30 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y36_N5
+// Location: FF_X66_Y50_N5
 dffeas \clock_divider|dividing_num[15] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~30_combout ),
@@ -985,7 +761,7 @@ defparam \clock_divider|dividing_num[15] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[15] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N6
+// Location: LCCOMB_X66_Y50_N6
 fiftyfivenm_lcell_comb \clock_divider|Add0~32 (
 // Equation(s):
 // \clock_divider|Add0~32_combout  = (\clock_divider|dividing_num [16] & (\clock_divider|Add0~31  $ (GND))) # (!\clock_divider|dividing_num [16] & (!\clock_divider|Add0~31  & VCC))
@@ -1003,27 +779,10 @@ defparam \clock_divider|Add0~32 .lut_mask = 16'hA50A;
 defparam \clock_divider|Add0~32 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N4
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~14 (
-// Equation(s):
-// \clock_divider|dividing_num~14_combout  = (\clock_divider|Add0~32_combout  & (((!\clock_divider|Equal0~4_combout ) # (!\clock_divider|Equal0~5_combout )) # (!\clock_divider|Equal0~7_combout )))
-
-	.dataa(\clock_divider|Equal0~7_combout ),
-	.datab(\clock_divider|Add0~32_combout ),
-	.datac(\clock_divider|Equal0~5_combout ),
-	.datad(\clock_divider|Equal0~4_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~14_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~14 .lut_mask = 16'h4CCC;
-defparam \clock_divider|dividing_num~14 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N5
+// Location: FF_X66_Y50_N7
 dffeas \clock_divider|dividing_num[16] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~14_combout ),
+	.d(\clock_divider|Add0~32_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1039,7 +798,7 @@ defparam \clock_divider|dividing_num[16] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[16] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N8
+// Location: LCCOMB_X66_Y50_N8
 fiftyfivenm_lcell_comb \clock_divider|Add0~34 (
 // Equation(s):
 // \clock_divider|Add0~34_combout  = (\clock_divider|dividing_num [17] & (!\clock_divider|Add0~33 )) # (!\clock_divider|dividing_num [17] & ((\clock_divider|Add0~33 ) # (GND)))
@@ -1057,7 +816,7 @@ defparam \clock_divider|Add0~34 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~34 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y36_N9
+// Location: FF_X66_Y50_N9
 dffeas \clock_divider|dividing_num[17] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~34_combout ),
@@ -1076,25 +835,44 @@ defparam \clock_divider|dividing_num[17] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[17] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N10
+// Location: LCCOMB_X66_Y50_N10
 fiftyfivenm_lcell_comb \clock_divider|Add0~36 (
 // Equation(s):
 // \clock_divider|Add0~36_combout  = (\clock_divider|dividing_num [18] & (\clock_divider|Add0~35  $ (GND))) # (!\clock_divider|dividing_num [18] & (!\clock_divider|Add0~35  & VCC))
 // \clock_divider|Add0~37  = CARRY((\clock_divider|dividing_num [18] & !\clock_divider|Add0~35 ))
 
-	.dataa(gnd),
-	.datab(\clock_divider|dividing_num [18]),
+	.dataa(\clock_divider|dividing_num [18]),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~35 ),
 	.combout(\clock_divider|Add0~36_combout ),
 	.cout(\clock_divider|Add0~37 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~36 .lut_mask = 16'hC30C;
+defparam \clock_divider|Add0~36 .lut_mask = 16'hA50A;
 defparam \clock_divider|Add0~36 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N12
+// Location: FF_X66_Y50_N11
+dffeas \clock_divider|dividing_num[18] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\clock_divider|Add0~36_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clock_divider|dividing_num [18]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clock_divider|dividing_num[18] .is_wysiwyg = "true";
+defparam \clock_divider|dividing_num[18] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N12
 fiftyfivenm_lcell_comb \clock_divider|Add0~38 (
 // Equation(s):
 // \clock_divider|Add0~38_combout  = (\clock_divider|dividing_num [19] & (!\clock_divider|Add0~37 )) # (!\clock_divider|dividing_num [19] & ((\clock_divider|Add0~37 ) # (GND)))
@@ -1112,27 +890,10 @@ defparam \clock_divider|Add0~38 .lut_mask = 16'h5A5F;
 defparam \clock_divider|Add0~38 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N20
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~16 (
-// Equation(s):
-// \clock_divider|dividing_num~16_combout  = (\clock_divider|Add0~38_combout  & (((!\clock_divider|Equal0~5_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~7_combout )))
-
-	.dataa(\clock_divider|Equal0~7_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~5_combout ),
-	.datad(\clock_divider|Add0~38_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~16_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~16 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~16 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N21
+// Location: FF_X66_Y50_N13
 dffeas \clock_divider|dividing_num[19] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~16_combout ),
+	.d(\clock_divider|Add0~38_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1148,7 +909,24 @@ defparam \clock_divider|dividing_num[19] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[19] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N14
+// Location: LCCOMB_X67_Y50_N0
+fiftyfivenm_lcell_comb \clock_divider|Equal0~5 (
+// Equation(s):
+// \clock_divider|Equal0~5_combout  = (!\clock_divider|dividing_num [17] & (!\clock_divider|dividing_num [16] & (!\clock_divider|dividing_num [18] & !\clock_divider|dividing_num [19])))
+
+	.dataa(\clock_divider|dividing_num [17]),
+	.datab(\clock_divider|dividing_num [16]),
+	.datac(\clock_divider|dividing_num [18]),
+	.datad(\clock_divider|dividing_num [19]),
+	.cin(gnd),
+	.combout(\clock_divider|Equal0~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clock_divider|Equal0~5 .lut_mask = 16'h0001;
+defparam \clock_divider|Equal0~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N14
 fiftyfivenm_lcell_comb \clock_divider|Add0~40 (
 // Equation(s):
 // \clock_divider|Add0~40_combout  = (\clock_divider|dividing_num [20] & (\clock_divider|Add0~39  $ (GND))) # (!\clock_divider|dividing_num [20] & (!\clock_divider|Add0~39  & VCC))
@@ -1166,27 +944,10 @@ defparam \clock_divider|Add0~40 .lut_mask = 16'hC30C;
 defparam \clock_divider|Add0~40 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N12
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~17 (
-// Equation(s):
-// \clock_divider|dividing_num~17_combout  = (\clock_divider|Add0~40_combout  & (((!\clock_divider|Equal0~7_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~5_combout )))
-
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~7_combout ),
-	.datad(\clock_divider|Add0~40_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~17_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~17 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~17 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N13
+// Location: FF_X66_Y50_N15
 dffeas \clock_divider|dividing_num[20] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~17_combout ),
+	.d(\clock_divider|Add0~40_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1202,45 +963,28 @@ defparam \clock_divider|dividing_num[20] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[20] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N16
+// Location: LCCOMB_X66_Y50_N16
 fiftyfivenm_lcell_comb \clock_divider|Add0~42 (
 // Equation(s):
 // \clock_divider|Add0~42_combout  = (\clock_divider|dividing_num [21] & (!\clock_divider|Add0~41 )) # (!\clock_divider|dividing_num [21] & ((\clock_divider|Add0~41 ) # (GND)))
 // \clock_divider|Add0~43  = CARRY((!\clock_divider|Add0~41 ) # (!\clock_divider|dividing_num [21]))
 
-	.dataa(\clock_divider|dividing_num [21]),
-	.datab(gnd),
+	.dataa(gnd),
+	.datab(\clock_divider|dividing_num [21]),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~41 ),
 	.combout(\clock_divider|Add0~42_combout ),
 	.cout(\clock_divider|Add0~43 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~42 .lut_mask = 16'h5A5F;
+defparam \clock_divider|Add0~42 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~42 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N6
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~18 (
-// Equation(s):
-// \clock_divider|dividing_num~18_combout  = (\clock_divider|Add0~42_combout  & (((!\clock_divider|Equal0~4_combout ) # (!\clock_divider|Equal0~7_combout )) # (!\clock_divider|Equal0~5_combout )))
-
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Equal0~7_combout ),
-	.datac(\clock_divider|Add0~42_combout ),
-	.datad(\clock_divider|Equal0~4_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~18_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~18 .lut_mask = 16'h70F0;
-defparam \clock_divider|dividing_num~18 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N7
+// Location: FF_X66_Y50_N17
 dffeas \clock_divider|dividing_num[21] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~18_combout ),
+	.d(\clock_divider|Add0~42_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1256,7 +1000,7 @@ defparam \clock_divider|dividing_num[21] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[21] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N18
+// Location: LCCOMB_X66_Y50_N18
 fiftyfivenm_lcell_comb \clock_divider|Add0~44 (
 // Equation(s):
 // \clock_divider|Add0~44_combout  = (\clock_divider|dividing_num [22] & (\clock_divider|Add0~43  $ (GND))) # (!\clock_divider|dividing_num [22] & (!\clock_divider|Add0~43  & VCC))
@@ -1274,27 +1018,10 @@ defparam \clock_divider|Add0~44 .lut_mask = 16'hC30C;
 defparam \clock_divider|Add0~44 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N8
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~19 (
-// Equation(s):
-// \clock_divider|dividing_num~19_combout  = (\clock_divider|Add0~44_combout  & (((!\clock_divider|Equal0~7_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~5_combout )))
-
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~7_combout ),
-	.datad(\clock_divider|Add0~44_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~19_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~19 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~19 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N9
+// Location: FF_X66_Y50_N19
 dffeas \clock_divider|dividing_num[22] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~19_combout ),
+	.d(\clock_divider|Add0~44_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1310,7 +1037,7 @@ defparam \clock_divider|dividing_num[22] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[22] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N20
+// Location: LCCOMB_X66_Y50_N20
 fiftyfivenm_lcell_comb \clock_divider|Add0~46 (
 // Equation(s):
 // \clock_divider|Add0~46_combout  = (\clock_divider|dividing_num [23] & (!\clock_divider|Add0~45 )) # (!\clock_divider|dividing_num [23] & ((\clock_divider|Add0~45 ) # (GND)))
@@ -1328,7 +1055,7 @@ defparam \clock_divider|Add0~46 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~46 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y36_N21
+// Location: FF_X66_Y50_N21
 dffeas \clock_divider|dividing_num[23] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~46_combout ),
@@ -1347,45 +1074,28 @@ defparam \clock_divider|dividing_num[23] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[23] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N22
+// Location: LCCOMB_X66_Y50_N22
 fiftyfivenm_lcell_comb \clock_divider|Add0~48 (
 // Equation(s):
 // \clock_divider|Add0~48_combout  = (\clock_divider|dividing_num [24] & (\clock_divider|Add0~47  $ (GND))) # (!\clock_divider|dividing_num [24] & (!\clock_divider|Add0~47  & VCC))
 // \clock_divider|Add0~49  = CARRY((\clock_divider|dividing_num [24] & !\clock_divider|Add0~47 ))
 
-	.dataa(gnd),
-	.datab(\clock_divider|dividing_num [24]),
+	.dataa(\clock_divider|dividing_num [24]),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(\clock_divider|Add0~47 ),
 	.combout(\clock_divider|Add0~48_combout ),
 	.cout(\clock_divider|Add0~49 ));
 // synopsys translate_off
-defparam \clock_divider|Add0~48 .lut_mask = 16'hC30C;
+defparam \clock_divider|Add0~48 .lut_mask = 16'hA50A;
 defparam \clock_divider|Add0~48 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N28
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~20 (
-// Equation(s):
-// \clock_divider|dividing_num~20_combout  = (\clock_divider|Add0~48_combout  & (((!\clock_divider|Equal0~7_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~5_combout )))
-
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
-	.datac(\clock_divider|Equal0~7_combout ),
-	.datad(\clock_divider|Add0~48_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|dividing_num~20_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|dividing_num~20 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~20 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X72_Y36_N29
+// Location: FF_X66_Y50_N23
 dffeas \clock_divider|dividing_num[24] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~20_combout ),
+	.d(\clock_divider|Add0~48_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1401,7 +1111,7 @@ defparam \clock_divider|dividing_num[24] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[24] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N24
+// Location: LCCOMB_X66_Y50_N24
 fiftyfivenm_lcell_comb \clock_divider|Add0~50 (
 // Equation(s):
 // \clock_divider|Add0~50_combout  = (\clock_divider|dividing_num [25] & (!\clock_divider|Add0~49 )) # (!\clock_divider|dividing_num [25] & ((\clock_divider|Add0~49 ) # (GND)))
@@ -1419,7 +1129,7 @@ defparam \clock_divider|Add0~50 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~50 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y36_N25
+// Location: FF_X66_Y50_N25
 dffeas \clock_divider|dividing_num[25] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~50_combout ),
@@ -1438,7 +1148,7 @@ defparam \clock_divider|dividing_num[25] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[25] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y36_N26
+// Location: LCCOMB_X66_Y50_N26
 fiftyfivenm_lcell_comb \clock_divider|Add0~52 (
 // Equation(s):
 // \clock_divider|Add0~52_combout  = \clock_divider|dividing_num [26] $ (!\clock_divider|Add0~51 )
@@ -1455,7 +1165,7 @@ defparam \clock_divider|Add0~52 .lut_mask = 16'hA5A5;
 defparam \clock_divider|Add0~52 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y36_N27
+// Location: FF_X66_Y50_N27
 dffeas \clock_divider|dividing_num[26] (
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\clock_divider|Add0~52_combout ),
@@ -1474,66 +1184,67 @@ defparam \clock_divider|dividing_num[26] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[26] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N18
+// Location: LCCOMB_X66_Y50_N28
 fiftyfivenm_lcell_comb \clock_divider|Equal0~6 (
 // Equation(s):
-// \clock_divider|Equal0~6_combout  = (\clock_divider|dividing_num [21] & (\clock_divider|dividing_num [22] & (!\clock_divider|dividing_num [23] & \clock_divider|dividing_num [20])))
+// \clock_divider|Equal0~6_combout  = (!\clock_divider|dividing_num [23] & (!\clock_divider|dividing_num [22] & (!\clock_divider|dividing_num [20] & !\clock_divider|dividing_num [21])))
 
-	.dataa(\clock_divider|dividing_num [21]),
+	.dataa(\clock_divider|dividing_num [23]),
 	.datab(\clock_divider|dividing_num [22]),
-	.datac(\clock_divider|dividing_num [23]),
-	.datad(\clock_divider|dividing_num [20]),
+	.datac(\clock_divider|dividing_num [20]),
+	.datad(\clock_divider|dividing_num [21]),
 	.cin(gnd),
 	.combout(\clock_divider|Equal0~6_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clock_divider|Equal0~6 .lut_mask = 16'h0800;
+defparam \clock_divider|Equal0~6 .lut_mask = 16'h0001;
 defparam \clock_divider|Equal0~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N30
+// Location: LCCOMB_X66_Y50_N30
 fiftyfivenm_lcell_comb \clock_divider|Equal0~7 (
 // Equation(s):
-// \clock_divider|Equal0~7_combout  = (!\clock_divider|dividing_num [26] & (\clock_divider|dividing_num [24] & (!\clock_divider|dividing_num [25] & \clock_divider|Equal0~6_combout )))
+// \clock_divider|Equal0~7_combout  = (!\clock_divider|dividing_num [26] & (!\clock_divider|dividing_num [25] & (!\clock_divider|dividing_num [24] & \clock_divider|Equal0~6_combout )))
 
 	.dataa(\clock_divider|dividing_num [26]),
-	.datab(\clock_divider|dividing_num [24]),
-	.datac(\clock_divider|dividing_num [25]),
+	.datab(\clock_divider|dividing_num [25]),
+	.datac(\clock_divider|dividing_num [24]),
 	.datad(\clock_divider|Equal0~6_combout ),
 	.cin(gnd),
 	.combout(\clock_divider|Equal0~7_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clock_divider|Equal0~7 .lut_mask = 16'h0400;
+defparam \clock_divider|Equal0~7 .lut_mask = 16'h0100;
 defparam \clock_divider|Equal0~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N14
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~9 (
+// Location: LCCOMB_X66_Y51_N6
+fiftyfivenm_lcell_comb \clock_divider|Add0~0 (
 // Equation(s):
-// \clock_divider|dividing_num~9_combout  = (\clock_divider|Add0~0_combout  & (((!\clock_divider|Equal0~4_combout ) # (!\clock_divider|Equal0~7_combout )) # (!\clock_divider|Equal0~5_combout )))
+// \clock_divider|Add0~0_combout  = \clock_divider|dividing_num [0] $ (VCC)
+// \clock_divider|Add0~1  = CARRY(\clock_divider|dividing_num [0])
 
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Add0~0_combout ),
-	.datac(\clock_divider|Equal0~7_combout ),
-	.datad(\clock_divider|Equal0~4_combout ),
+	.dataa(\clock_divider|dividing_num [0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
 	.cin(gnd),
-	.combout(\clock_divider|dividing_num~9_combout ),
-	.cout());
+	.combout(\clock_divider|Add0~0_combout ),
+	.cout(\clock_divider|Add0~1 ));
 // synopsys translate_off
-defparam \clock_divider|dividing_num~9 .lut_mask = 16'h4CCC;
-defparam \clock_divider|dividing_num~9 .sum_lutc_input = "datac";
+defparam \clock_divider|Add0~0 .lut_mask = 16'h55AA;
+defparam \clock_divider|Add0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N31
+// Location: FF_X66_Y51_N7
 dffeas \clock_divider|dividing_num[0] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(gnd),
-	.asdata(\clock_divider|dividing_num~9_combout ),
+	.d(\clock_divider|Add0~0_combout ),
+	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(vcc),
+	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -1544,7 +1255,7 @@ defparam \clock_divider|dividing_num[0] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[0] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N8
+// Location: LCCOMB_X66_Y51_N8
 fiftyfivenm_lcell_comb \clock_divider|Add0~2 (
 // Equation(s):
 // \clock_divider|Add0~2_combout  = (\clock_divider|dividing_num [1] & (!\clock_divider|Add0~1 )) # (!\clock_divider|dividing_num [1] & ((\clock_divider|Add0~1 ) # (GND)))
@@ -1562,10 +1273,27 @@ defparam \clock_divider|Add0~2 .lut_mask = 16'h3C3F;
 defparam \clock_divider|Add0~2 .sum_lutc_input = "cin";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N9
+// Location: LCCOMB_X66_Y51_N2
+fiftyfivenm_lcell_comb \clock_divider|dividing_num~1 (
+// Equation(s):
+// \clock_divider|dividing_num~1_combout  = (\clock_divider|Add0~2_combout  & (((!\clock_divider|Equal0~7_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~5_combout )))
+
+	.dataa(\clock_divider|Equal0~5_combout ),
+	.datab(\clock_divider|Add0~2_combout ),
+	.datac(\clock_divider|Equal0~4_combout ),
+	.datad(\clock_divider|Equal0~7_combout ),
+	.cin(gnd),
+	.combout(\clock_divider|dividing_num~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clock_divider|dividing_num~1 .lut_mask = 16'h4CCC;
+defparam \clock_divider|dividing_num~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X66_Y51_N3
 dffeas \clock_divider|dividing_num[1] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|Add0~2_combout ),
+	.d(\clock_divider|dividing_num~1_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1581,10 +1309,45 @@ defparam \clock_divider|dividing_num[1] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[1] .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X71_Y37_N11
+// Location: LCCOMB_X66_Y51_N10
+fiftyfivenm_lcell_comb \clock_divider|Add0~4 (
+// Equation(s):
+// \clock_divider|Add0~4_combout  = (\clock_divider|dividing_num [2] & (\clock_divider|Add0~3  $ (GND))) # (!\clock_divider|dividing_num [2] & (!\clock_divider|Add0~3  & VCC))
+// \clock_divider|Add0~5  = CARRY((\clock_divider|dividing_num [2] & !\clock_divider|Add0~3 ))
+
+	.dataa(gnd),
+	.datab(\clock_divider|dividing_num [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\clock_divider|Add0~3 ),
+	.combout(\clock_divider|Add0~4_combout ),
+	.cout(\clock_divider|Add0~5 ));
+// synopsys translate_off
+defparam \clock_divider|Add0~4 .lut_mask = 16'hC30C;
+defparam \clock_divider|Add0~4 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y51_N4
+fiftyfivenm_lcell_comb \clock_divider|dividing_num~0 (
+// Equation(s):
+// \clock_divider|dividing_num~0_combout  = (\clock_divider|Add0~4_combout  & (((!\clock_divider|Equal0~4_combout ) # (!\clock_divider|Equal0~7_combout )) # (!\clock_divider|Equal0~5_combout )))
+
+	.dataa(\clock_divider|Equal0~5_combout ),
+	.datab(\clock_divider|Equal0~7_combout ),
+	.datac(\clock_divider|Equal0~4_combout ),
+	.datad(\clock_divider|Add0~4_combout ),
+	.cin(gnd),
+	.combout(\clock_divider|dividing_num~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clock_divider|dividing_num~0 .lut_mask = 16'h7F00;
+defparam \clock_divider|dividing_num~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X66_Y51_N5
 dffeas \clock_divider|dividing_num[2] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|Add0~4_combout ),
+	.d(\clock_divider|dividing_num~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1600,15 +1363,108 @@ defparam \clock_divider|dividing_num[2] .is_wysiwyg = "true";
 defparam \clock_divider|dividing_num[2] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y37_N24
+// Location: LCCOMB_X66_Y51_N12
+fiftyfivenm_lcell_comb \clock_divider|Add0~6 (
+// Equation(s):
+// \clock_divider|Add0~6_combout  = (\clock_divider|dividing_num [3] & (!\clock_divider|Add0~5 )) # (!\clock_divider|dividing_num [3] & ((\clock_divider|Add0~5 ) # (GND)))
+// \clock_divider|Add0~7  = CARRY((!\clock_divider|Add0~5 ) # (!\clock_divider|dividing_num [3]))
+
+	.dataa(\clock_divider|dividing_num [3]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\clock_divider|Add0~5 ),
+	.combout(\clock_divider|Add0~6_combout ),
+	.cout(\clock_divider|Add0~7 ));
+// synopsys translate_off
+defparam \clock_divider|Add0~6 .lut_mask = 16'h5A5F;
+defparam \clock_divider|Add0~6 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X66_Y51_N13
+dffeas \clock_divider|dividing_num[3] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\clock_divider|Add0~6_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clock_divider|dividing_num [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clock_divider|dividing_num[3] .is_wysiwyg = "true";
+defparam \clock_divider|dividing_num[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y51_N14
+fiftyfivenm_lcell_comb \clock_divider|Add0~8 (
+// Equation(s):
+// \clock_divider|Add0~8_combout  = (\clock_divider|dividing_num [4] & (\clock_divider|Add0~7  $ (GND))) # (!\clock_divider|dividing_num [4] & (!\clock_divider|Add0~7  & VCC))
+// \clock_divider|Add0~9  = CARRY((\clock_divider|dividing_num [4] & !\clock_divider|Add0~7 ))
+
+	.dataa(gnd),
+	.datab(\clock_divider|dividing_num [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\clock_divider|Add0~7 ),
+	.combout(\clock_divider|Add0~8_combout ),
+	.cout(\clock_divider|Add0~9 ));
+// synopsys translate_off
+defparam \clock_divider|Add0~8 .lut_mask = 16'hC30C;
+defparam \clock_divider|Add0~8 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X66_Y51_N15
+dffeas \clock_divider|dividing_num[4] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\clock_divider|Add0~8_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clock_divider|dividing_num [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clock_divider|dividing_num[4] .is_wysiwyg = "true";
+defparam \clock_divider|dividing_num[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X66_Y51_N17
+dffeas \clock_divider|dividing_num[5] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\clock_divider|Add0~10_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clock_divider|dividing_num [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clock_divider|dividing_num[5] .is_wysiwyg = "true";
+defparam \clock_divider|dividing_num[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X67_Y51_N22
 fiftyfivenm_lcell_comb \clock_divider|Equal0~1 (
 // Equation(s):
-// \clock_divider|Equal0~1_combout  = (!\clock_divider|dividing_num [2] & (!\clock_divider|dividing_num [0] & (!\clock_divider|dividing_num [3] & !\clock_divider|dividing_num [1])))
+// \clock_divider|Equal0~1_combout  = (!\clock_divider|dividing_num [5] & (!\clock_divider|dividing_num [7] & (!\clock_divider|dividing_num [6] & !\clock_divider|dividing_num [4])))
 
-	.dataa(\clock_divider|dividing_num [2]),
-	.datab(\clock_divider|dividing_num [0]),
-	.datac(\clock_divider|dividing_num [3]),
-	.datad(\clock_divider|dividing_num [1]),
+	.dataa(\clock_divider|dividing_num [5]),
+	.datab(\clock_divider|dividing_num [7]),
+	.datac(\clock_divider|dividing_num [6]),
+	.datad(\clock_divider|dividing_num [4]),
 	.cin(gnd),
 	.combout(\clock_divider|Equal0~1_combout ),
 	.cout());
@@ -1617,27 +1473,27 @@ defparam \clock_divider|Equal0~1 .lut_mask = 16'h0001;
 defparam \clock_divider|Equal0~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N24
-fiftyfivenm_lcell_comb \clock_divider|Equal0~3 (
+// Location: LCCOMB_X67_Y51_N28
+fiftyfivenm_lcell_comb \clock_divider|Equal0~0 (
 // Equation(s):
-// \clock_divider|Equal0~3_combout  = (\clock_divider|dividing_num [12] & (!\clock_divider|dividing_num [15] & (\clock_divider|dividing_num [13] & \clock_divider|dividing_num [14])))
+// \clock_divider|Equal0~0_combout  = (!\clock_divider|dividing_num [3] & (\clock_divider|dividing_num [0] & (\clock_divider|dividing_num [2] & !\clock_divider|dividing_num [1])))
 
-	.dataa(\clock_divider|dividing_num [12]),
-	.datab(\clock_divider|dividing_num [15]),
-	.datac(\clock_divider|dividing_num [13]),
-	.datad(\clock_divider|dividing_num [14]),
+	.dataa(\clock_divider|dividing_num [3]),
+	.datab(\clock_divider|dividing_num [0]),
+	.datac(\clock_divider|dividing_num [2]),
+	.datad(\clock_divider|dividing_num [1]),
 	.cin(gnd),
-	.combout(\clock_divider|Equal0~3_combout ),
+	.combout(\clock_divider|Equal0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clock_divider|Equal0~3 .lut_mask = 16'h2000;
-defparam \clock_divider|Equal0~3 .sum_lutc_input = "datac";
+defparam \clock_divider|Equal0~0 .lut_mask = 16'h0040;
+defparam \clock_divider|Equal0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N2
+// Location: LCCOMB_X66_Y51_N0
 fiftyfivenm_lcell_comb \clock_divider|Equal0~2 (
 // Equation(s):
-// \clock_divider|Equal0~2_combout  = (!\clock_divider|dividing_num [8] & (!\clock_divider|dividing_num [9] & (!\clock_divider|dividing_num [10] & \clock_divider|dividing_num [11])))
+// \clock_divider|Equal0~2_combout  = (!\clock_divider|dividing_num [8] & (!\clock_divider|dividing_num [9] & (!\clock_divider|dividing_num [10] & !\clock_divider|dividing_num [11])))
 
 	.dataa(\clock_divider|dividing_num [8]),
 	.datab(\clock_divider|dividing_num [9]),
@@ -1647,36 +1503,36 @@ fiftyfivenm_lcell_comb \clock_divider|Equal0~2 (
 	.combout(\clock_divider|Equal0~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clock_divider|Equal0~2 .lut_mask = 16'h0100;
+defparam \clock_divider|Equal0~2 .lut_mask = 16'h0001;
 defparam \clock_divider|Equal0~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y37_N4
-fiftyfivenm_lcell_comb \clock_divider|Equal0~0 (
+// Location: LCCOMB_X67_Y51_N6
+fiftyfivenm_lcell_comb \clock_divider|Equal0~3 (
 // Equation(s):
-// \clock_divider|Equal0~0_combout  = (\clock_divider|dividing_num [6] & (!\clock_divider|dividing_num [7] & (!\clock_divider|dividing_num [4] & !\clock_divider|dividing_num [5])))
+// \clock_divider|Equal0~3_combout  = (!\clock_divider|dividing_num [15] & (!\clock_divider|dividing_num [12] & (!\clock_divider|dividing_num [13] & !\clock_divider|dividing_num [14])))
 
-	.dataa(\clock_divider|dividing_num [6]),
-	.datab(\clock_divider|dividing_num [7]),
-	.datac(\clock_divider|dividing_num [4]),
-	.datad(\clock_divider|dividing_num [5]),
+	.dataa(\clock_divider|dividing_num [15]),
+	.datab(\clock_divider|dividing_num [12]),
+	.datac(\clock_divider|dividing_num [13]),
+	.datad(\clock_divider|dividing_num [14]),
 	.cin(gnd),
-	.combout(\clock_divider|Equal0~0_combout ),
+	.combout(\clock_divider|Equal0~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clock_divider|Equal0~0 .lut_mask = 16'h0002;
-defparam \clock_divider|Equal0~0 .sum_lutc_input = "datac";
+defparam \clock_divider|Equal0~3 .lut_mask = 16'h0001;
+defparam \clock_divider|Equal0~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N10
+// Location: LCCOMB_X67_Y51_N12
 fiftyfivenm_lcell_comb \clock_divider|Equal0~4 (
 // Equation(s):
-// \clock_divider|Equal0~4_combout  = (\clock_divider|Equal0~1_combout  & (\clock_divider|Equal0~3_combout  & (\clock_divider|Equal0~2_combout  & \clock_divider|Equal0~0_combout )))
+// \clock_divider|Equal0~4_combout  = (\clock_divider|Equal0~1_combout  & (\clock_divider|Equal0~0_combout  & (\clock_divider|Equal0~2_combout  & \clock_divider|Equal0~3_combout )))
 
 	.dataa(\clock_divider|Equal0~1_combout ),
-	.datab(\clock_divider|Equal0~3_combout ),
+	.datab(\clock_divider|Equal0~0_combout ),
 	.datac(\clock_divider|Equal0~2_combout ),
-	.datad(\clock_divider|Equal0~0_combout ),
+	.datad(\clock_divider|Equal0~3_combout ),
 	.cin(gnd),
 	.combout(\clock_divider|Equal0~4_combout ),
 	.cout());
@@ -1685,85 +1541,49 @@ defparam \clock_divider|Equal0~4 .lut_mask = 16'h8000;
 defparam \clock_divider|Equal0~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X72_Y36_N22
-fiftyfivenm_lcell_comb \clock_divider|dividing_num~15 (
+// Location: LCCOMB_X67_Y51_N10
+fiftyfivenm_lcell_comb \clock_divider|slw_clk~0 (
 // Equation(s):
-// \clock_divider|dividing_num~15_combout  = (\clock_divider|Add0~36_combout  & (((!\clock_divider|Equal0~7_combout ) # (!\clock_divider|Equal0~4_combout )) # (!\clock_divider|Equal0~5_combout )))
+// \clock_divider|slw_clk~0_combout  = \clock_divider|slw_clk~q  $ (((\clock_divider|Equal0~4_combout  & (\clock_divider|Equal0~5_combout  & \clock_divider|Equal0~7_combout ))))
 
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|Equal0~4_combout ),
+	.dataa(\clock_divider|Equal0~4_combout ),
+	.datab(\clock_divider|Equal0~5_combout ),
 	.datac(\clock_divider|Equal0~7_combout ),
-	.datad(\clock_divider|Add0~36_combout ),
+	.datad(\clock_divider|slw_clk~q ),
 	.cin(gnd),
-	.combout(\clock_divider|dividing_num~15_combout ),
+	.combout(\clock_divider|slw_clk~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clock_divider|dividing_num~15 .lut_mask = 16'h7F00;
-defparam \clock_divider|dividing_num~15 .sum_lutc_input = "datac";
+defparam \clock_divider|slw_clk~0 .lut_mask = 16'h7F80;
+defparam \clock_divider|slw_clk~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X72_Y36_N23
-dffeas \clock_divider|dividing_num[18] (
+// Location: LCCOMB_X67_Y51_N14
+fiftyfivenm_lcell_comb \clock_divider|slw_clk~feeder (
+// Equation(s):
+// \clock_divider|slw_clk~feeder_combout  = \clock_divider|slw_clk~0_combout 
+
+	.dataa(gnd),
+	.datab(\clock_divider|slw_clk~0_combout ),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\clock_divider|slw_clk~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clock_divider|slw_clk~feeder .lut_mask = 16'hCCCC;
+defparam \clock_divider|slw_clk~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X67_Y51_N15
+dffeas \clock_divider|slw_clk (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\clock_divider|dividing_num~15_combout ),
+	.d(\clock_divider|slw_clk~feeder_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\clock_divider|dividing_num [18]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \clock_divider|dividing_num[18] .is_wysiwyg = "true";
-defparam \clock_divider|dividing_num[18] .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X72_Y36_N26
-fiftyfivenm_lcell_comb \clock_divider|Equal0~5 (
-// Equation(s):
-// \clock_divider|Equal0~5_combout  = (\clock_divider|dividing_num [18] & (\clock_divider|dividing_num [19] & (\clock_divider|dividing_num [16] & !\clock_divider|dividing_num [17])))
-
-	.dataa(\clock_divider|dividing_num [18]),
-	.datab(\clock_divider|dividing_num [19]),
-	.datac(\clock_divider|dividing_num [16]),
-	.datad(\clock_divider|dividing_num [17]),
-	.cin(gnd),
-	.combout(\clock_divider|Equal0~5_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|Equal0~5 .lut_mask = 16'h0080;
-defparam \clock_divider|Equal0~5 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X72_Y36_N16
-fiftyfivenm_lcell_comb \clock_divider|slw_clk~0 (
-// Equation(s):
-// \clock_divider|slw_clk~0_combout  = \clock_divider|slw_clk~q  $ (((\clock_divider|Equal0~5_combout  & (\clock_divider|Equal0~7_combout  & \clock_divider|Equal0~4_combout ))))
-
-	.dataa(\clock_divider|Equal0~5_combout ),
-	.datab(\clock_divider|slw_clk~q ),
-	.datac(\clock_divider|Equal0~7_combout ),
-	.datad(\clock_divider|Equal0~4_combout ),
-	.cin(gnd),
-	.combout(\clock_divider|slw_clk~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \clock_divider|slw_clk~0 .lut_mask = 16'h6CCC;
-defparam \clock_divider|slw_clk~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X71_Y36_N13
-dffeas \clock_divider|slw_clk (
-	.clk(\clk~inputclkctrl_outclk ),
-	.d(gnd),
-	.asdata(\clock_divider|slw_clk~0_combout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(vcc),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -1774,7 +1594,7 @@ defparam \clock_divider|slw_clk .is_wysiwyg = "true";
 defparam \clock_divider|slw_clk .power_up = "low";
 // synopsys translate_on
 
-// Location: CLKCTRL_G9
+// Location: CLKCTRL_G10
 fiftyfivenm_clkctrl \clock_divider|slw_clk~clkctrl (
 	.ena(vcc),
 	.inclk({vcc,vcc,vcc,\clock_divider|slw_clk~q }),
@@ -1787,7 +1607,7 @@ defparam \clock_divider|slw_clk~clkctrl .clock_type = "global clock";
 defparam \clock_divider|slw_clk~clkctrl .ena_register_mode = "none";
 // synopsys translate_on
 
-// Location: IOIBUF_X51_Y54_N29
+// Location: IOIBUF_X49_Y54_N22
 fiftyfivenm_io_ibuf \reset~input (
 	.i(reset),
 	.ibar(gnd),
@@ -1799,24 +1619,24 @@ defparam \reset~input .listen_to_nsleep_signal = "false";
 defparam \reset~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N4
+// Location: LCCOMB_X52_Y53_N4
 fiftyfivenm_lcell_comb \dff4bit|q~0 (
 // Equation(s):
-// \dff4bit|q~0_combout  = (!\dff4bit|q [0] & !\reset~input_o )
+// \dff4bit|q~0_combout  = (!\reset~input_o  & !\dff4bit|q [0])
 
 	.dataa(gnd),
-	.datab(gnd),
+	.datab(\reset~input_o ),
 	.datac(\dff4bit|q [0]),
-	.datad(\reset~input_o ),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\dff4bit|q~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \dff4bit|q~0 .lut_mask = 16'h000F;
+defparam \dff4bit|q~0 .lut_mask = 16'h0303;
 defparam \dff4bit|q~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: IOIBUF_X46_Y54_N29
+// Location: IOIBUF_X54_Y54_N29
 fiftyfivenm_io_ibuf \start~input (
 	.i(start),
 	.ibar(gnd),
@@ -1828,15 +1648,15 @@ defparam \start~input .listen_to_nsleep_signal = "false";
 defparam \start~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N24
+// Location: LCCOMB_X52_Y53_N14
 fiftyfivenm_lcell_comb \startreg~0 (
 // Equation(s):
-// \startreg~0_combout  = (\start~input_o ) # (\reset~input_o )
+// \startreg~0_combout  = (\reset~input_o ) # (\start~input_o )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\start~input_o ),
-	.datad(\reset~input_o ),
+	.datac(\reset~input_o ),
+	.datad(\start~input_o ),
 	.cin(gnd),
 	.combout(\startreg~0_combout ),
 	.cout());
@@ -1845,7 +1665,7 @@ defparam \startreg~0 .lut_mask = 16'hFFF0;
 defparam \startreg~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X54_Y53_N25
+// Location: FF_X52_Y53_N15
 dffeas startreg(
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\startreg~0_combout ),
@@ -1876,15 +1696,15 @@ defparam \stop~input .listen_to_nsleep_signal = "false";
 defparam \stop~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N18
+// Location: LCCOMB_X52_Y53_N28
 fiftyfivenm_lcell_comb \stopreg~0 (
 // Equation(s):
-// \stopreg~0_combout  = (\stop~input_o ) # (\reset~input_o )
+// \stopreg~0_combout  = (\reset~input_o ) # (\stop~input_o )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\stop~input_o ),
-	.datad(\reset~input_o ),
+	.datac(\reset~input_o ),
+	.datad(\stop~input_o ),
 	.cin(gnd),
 	.combout(\stopreg~0_combout ),
 	.cout());
@@ -1893,7 +1713,7 @@ defparam \stopreg~0 .lut_mask = 16'hFFF0;
 defparam \stopreg~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X54_Y53_N19
+// Location: FF_X52_Y53_N29
 dffeas stopreg(
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\stopreg~0_combout ),
@@ -1912,7 +1732,7 @@ defparam stopreg.is_wysiwyg = "true";
 defparam stopreg.power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N12
+// Location: LCCOMB_X52_Y53_N10
 fiftyfivenm_lcell_comb \running~0 (
 // Equation(s):
 // \running~0_combout  = (\startreg~q  & ((\running~q ) # (!\stopreg~q ))) # (!\startreg~q  & (\running~q  & !\stopreg~q ))
@@ -1929,7 +1749,7 @@ defparam \running~0 .lut_mask = 16'hC0FC;
 defparam \running~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X54_Y53_N13
+// Location: FF_X52_Y53_N11
 dffeas running(
 	.clk(\clk~inputclkctrl_outclk ),
 	.d(\running~0_combout ),
@@ -1948,24 +1768,24 @@ defparam running.is_wysiwyg = "true";
 defparam running.power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N26
+// Location: LCCOMB_X52_Y53_N0
 fiftyfivenm_lcell_comb \dff4bit|q[3]~1 (
 // Equation(s):
 // \dff4bit|q[3]~1_combout  = (\reset~input_o ) # (\running~q )
 
 	.dataa(gnd),
-	.datab(\reset~input_o ),
-	.datac(gnd),
+	.datab(gnd),
+	.datac(\reset~input_o ),
 	.datad(\running~q ),
 	.cin(gnd),
 	.combout(\dff4bit|q[3]~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \dff4bit|q[3]~1 .lut_mask = 16'hFFCC;
+defparam \dff4bit|q[3]~1 .lut_mask = 16'hFFF0;
 defparam \dff4bit|q[3]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X54_Y53_N5
+// Location: FF_X52_Y53_N5
 dffeas \dff4bit|q[0] (
 	.clk(\clock_divider|slw_clk~clkctrl_outclk ),
 	.d(\dff4bit|q~0_combout ),
@@ -1984,113 +1804,7 @@ defparam \dff4bit|q[0] .is_wysiwyg = "true";
 defparam \dff4bit|q[0] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N8
-fiftyfivenm_lcell_comb \dff4bit|q~4 (
-// Equation(s):
-// \dff4bit|q~4_combout  = (!\reset~input_o  & (\dff4bit|q [2] $ (((\dff4bit|q [0] & \dff4bit|q [1])))))
-
-	.dataa(\dff4bit|q [0]),
-	.datab(\reset~input_o ),
-	.datac(\dff4bit|q [2]),
-	.datad(\dff4bit|q [1]),
-	.cin(gnd),
-	.combout(\dff4bit|q~4_combout ),
-	.cout());
-// synopsys translate_off
-defparam \dff4bit|q~4 .lut_mask = 16'h1230;
-defparam \dff4bit|q~4 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X54_Y53_N9
-dffeas \dff4bit|q[2] (
-	.clk(\clock_divider|slw_clk~clkctrl_outclk ),
-	.d(\dff4bit|q~4_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\dff4bit|q[3]~1_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\dff4bit|q [2]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \dff4bit|q[2] .is_wysiwyg = "true";
-defparam \dff4bit|q[2] .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X54_Y53_N14
-fiftyfivenm_lcell_comb \count|Add0~0 (
-// Equation(s):
-// \count|Add0~0_combout  = \dff4bit|q [3] $ (((\dff4bit|q [2] & (\dff4bit|q [0] & \dff4bit|q [1]))))
-
-	.dataa(\dff4bit|q [3]),
-	.datab(\dff4bit|q [2]),
-	.datac(\dff4bit|q [0]),
-	.datad(\dff4bit|q [1]),
-	.cin(gnd),
-	.combout(\count|Add0~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \count|Add0~0 .lut_mask = 16'h6AAA;
-defparam \count|Add0~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X54_Y53_N30
-fiftyfivenm_lcell_comb \dff4bit|q~5 (
-// Equation(s):
-// \dff4bit|q~5_combout  = (!\reset~input_o  & (\count|Add0~0_combout  & \dff4bit|q[3]~2_combout ))
-
-	.dataa(gnd),
-	.datab(\reset~input_o ),
-	.datac(\count|Add0~0_combout ),
-	.datad(\dff4bit|q[3]~2_combout ),
-	.cin(gnd),
-	.combout(\dff4bit|q~5_combout ),
-	.cout());
-// synopsys translate_off
-defparam \dff4bit|q~5 .lut_mask = 16'h3000;
-defparam \dff4bit|q~5 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X54_Y53_N31
-dffeas \dff4bit|q[3] (
-	.clk(\clock_divider|slw_clk~clkctrl_outclk ),
-	.d(\dff4bit|q~5_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\dff4bit|q[3]~1_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\dff4bit|q [3]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \dff4bit|q[3] .is_wysiwyg = "true";
-defparam \dff4bit|q[3] .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X54_Y53_N0
-fiftyfivenm_lcell_comb \dff4bit|q[3]~2 (
-// Equation(s):
-// \dff4bit|q[3]~2_combout  = (\dff4bit|q [2]) # ((\dff4bit|q [1]) # ((!\dff4bit|q [3]) # (!\dff4bit|q [0])))
-
-	.dataa(\dff4bit|q [2]),
-	.datab(\dff4bit|q [1]),
-	.datac(\dff4bit|q [0]),
-	.datad(\dff4bit|q [3]),
-	.cin(gnd),
-	.combout(\dff4bit|q[3]~2_combout ),
-	.cout());
-// synopsys translate_off
-defparam \dff4bit|q[3]~2 .lut_mask = 16'hEFFF;
-defparam \dff4bit|q[3]~2 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X54_Y53_N2
+// Location: LCCOMB_X52_Y53_N6
 fiftyfivenm_lcell_comb \dff4bit|q~3 (
 // Equation(s):
 // \dff4bit|q~3_combout  = (!\reset~input_o  & (\dff4bit|q[3]~2_combout  & (\dff4bit|q [0] $ (\dff4bit|q [1]))))
@@ -2107,7 +1821,7 @@ defparam \dff4bit|q~3 .lut_mask = 16'h1200;
 defparam \dff4bit|q~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X54_Y53_N3
+// Location: FF_X52_Y53_N7
 dffeas \dff4bit|q[1] (
 	.clk(\clock_divider|slw_clk~clkctrl_outclk ),
 	.d(\dff4bit|q~3_combout ),
@@ -2126,122 +1840,228 @@ defparam \dff4bit|q[1] .is_wysiwyg = "true";
 defparam \dff4bit|q[1] .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N20
-fiftyfivenm_lcell_comb \numtosevenseg|WideOr6~0 (
+// Location: LCCOMB_X52_Y53_N12
+fiftyfivenm_lcell_comb \dff4bit|q~4 (
 // Equation(s):
-// \numtosevenseg|WideOr6~0_combout  = (\dff4bit|q [1] & (!\dff4bit|q [3] & ((!\dff4bit|q [0]) # (!\dff4bit|q [2])))) # (!\dff4bit|q [1] & (\dff4bit|q [3] $ ((\dff4bit|q [2]))))
+// \dff4bit|q~4_combout  = (!\reset~input_o  & (\dff4bit|q [2] $ (((\dff4bit|q [1] & \dff4bit|q [0])))))
 
 	.dataa(\dff4bit|q [1]),
-	.datab(\dff4bit|q [3]),
+	.datab(\reset~input_o ),
 	.datac(\dff4bit|q [2]),
+	.datad(\dff4bit|q [0]),
+	.cin(gnd),
+	.combout(\dff4bit|q~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \dff4bit|q~4 .lut_mask = 16'h1230;
+defparam \dff4bit|q~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X52_Y53_N13
+dffeas \dff4bit|q[2] (
+	.clk(\clock_divider|slw_clk~clkctrl_outclk ),
+	.d(\dff4bit|q~4_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\dff4bit|q[3]~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\dff4bit|q [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \dff4bit|q[2] .is_wysiwyg = "true";
+defparam \dff4bit|q[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X52_Y53_N22
+fiftyfivenm_lcell_comb \dff4bit|q[3]~2 (
+// Equation(s):
+// \dff4bit|q[3]~2_combout  = (\dff4bit|q [1]) # ((\dff4bit|q [2]) # ((!\dff4bit|q [3]) # (!\dff4bit|q [0])))
+
+	.dataa(\dff4bit|q [1]),
+	.datab(\dff4bit|q [2]),
+	.datac(\dff4bit|q [0]),
+	.datad(\dff4bit|q [3]),
+	.cin(gnd),
+	.combout(\dff4bit|q[3]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \dff4bit|q[3]~2 .lut_mask = 16'hEFFF;
+defparam \dff4bit|q[3]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X52_Y53_N16
+fiftyfivenm_lcell_comb \count|Add0~0 (
+// Equation(s):
+// \count|Add0~0_combout  = \dff4bit|q [3] $ (((\dff4bit|q [2] & (\dff4bit|q [0] & \dff4bit|q [1]))))
+
+	.dataa(\dff4bit|q [2]),
+	.datab(\dff4bit|q [0]),
+	.datac(\dff4bit|q [3]),
+	.datad(\dff4bit|q [1]),
+	.cin(gnd),
+	.combout(\count|Add0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \count|Add0~0 .lut_mask = 16'h78F0;
+defparam \count|Add0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X52_Y53_N30
+fiftyfivenm_lcell_comb \dff4bit|q~5 (
+// Equation(s):
+// \dff4bit|q~5_combout  = (!\reset~input_o  & (\dff4bit|q[3]~2_combout  & \count|Add0~0_combout ))
+
+	.dataa(gnd),
+	.datab(\reset~input_o ),
+	.datac(\dff4bit|q[3]~2_combout ),
+	.datad(\count|Add0~0_combout ),
+	.cin(gnd),
+	.combout(\dff4bit|q~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \dff4bit|q~5 .lut_mask = 16'h3000;
+defparam \dff4bit|q~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X52_Y53_N31
+dffeas \dff4bit|q[3] (
+	.clk(\clock_divider|slw_clk~clkctrl_outclk ),
+	.d(\dff4bit|q~5_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\dff4bit|q[3]~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\dff4bit|q [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \dff4bit|q[3] .is_wysiwyg = "true";
+defparam \dff4bit|q[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X52_Y53_N20
+fiftyfivenm_lcell_comb \numtosevenseg|WideOr6~0 (
+// Equation(s):
+// \numtosevenseg|WideOr6~0_combout  = (\dff4bit|q [2] & (!\dff4bit|q [3] & ((!\dff4bit|q [0]) # (!\dff4bit|q [1])))) # (!\dff4bit|q [2] & (\dff4bit|q [3] $ ((\dff4bit|q [1]))))
+
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [2]),
+	.datac(\dff4bit|q [1]),
 	.datad(\dff4bit|q [0]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr6~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr6~0 .lut_mask = 16'h1636;
+defparam \numtosevenseg|WideOr6~0 .lut_mask = 16'h1656;
 defparam \numtosevenseg|WideOr6~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N22
+// Location: LCCOMB_X52_Y53_N26
 fiftyfivenm_lcell_comb \numtosevenseg|WideOr5~0 (
 // Equation(s):
 // \numtosevenseg|WideOr5~0_combout  = (\dff4bit|q [2] & ((\dff4bit|q [3]) # ((\dff4bit|q [1] & \dff4bit|q [0])))) # (!\dff4bit|q [2] & ((\dff4bit|q [1]) # ((!\dff4bit|q [3] & \dff4bit|q [0]))))
 
-	.dataa(\dff4bit|q [1]),
-	.datab(\dff4bit|q [3]),
-	.datac(\dff4bit|q [2]),
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [2]),
+	.datac(\dff4bit|q [1]),
 	.datad(\dff4bit|q [0]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr5~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr5~0 .lut_mask = 16'hEBCA;
+defparam \numtosevenseg|WideOr5~0 .lut_mask = 16'hF9B8;
 defparam \numtosevenseg|WideOr5~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N28
+// Location: LCCOMB_X52_Y53_N24
 fiftyfivenm_lcell_comb \numtosevenseg|WideOr4~0 (
 // Equation(s):
 // \numtosevenseg|WideOr4~0_combout  = (\dff4bit|q [0]) # ((\dff4bit|q [1] & (\dff4bit|q [3])) # (!\dff4bit|q [1] & ((\dff4bit|q [2]))))
 
-	.dataa(\dff4bit|q [1]),
-	.datab(\dff4bit|q [3]),
-	.datac(\dff4bit|q [2]),
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [2]),
+	.datac(\dff4bit|q [1]),
 	.datad(\dff4bit|q [0]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr4~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr4~0 .lut_mask = 16'hFFD8;
+defparam \numtosevenseg|WideOr4~0 .lut_mask = 16'hFFAC;
 defparam \numtosevenseg|WideOr4~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N6
+// Location: LCCOMB_X51_Y53_N28
 fiftyfivenm_lcell_comb \numtosevenseg|WideOr3~0 (
 // Equation(s):
-// \numtosevenseg|WideOr3~0_combout  = (\dff4bit|q [2] & ((\dff4bit|q [3]) # (\dff4bit|q [1] $ (!\dff4bit|q [0])))) # (!\dff4bit|q [2] & ((\dff4bit|q [1] & (\dff4bit|q [3])) # (!\dff4bit|q [1] & ((\dff4bit|q [0])))))
+// \numtosevenseg|WideOr3~0_combout  = (\dff4bit|q [0] & ((\dff4bit|q [3]) # (\dff4bit|q [1] $ (!\dff4bit|q [2])))) # (!\dff4bit|q [0] & ((\dff4bit|q [1] & (\dff4bit|q [3])) # (!\dff4bit|q [1] & ((\dff4bit|q [2])))))
 
-	.dataa(\dff4bit|q [1]),
-	.datab(\dff4bit|q [3]),
-	.datac(\dff4bit|q [2]),
-	.datad(\dff4bit|q [0]),
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [0]),
+	.datac(\dff4bit|q [1]),
+	.datad(\dff4bit|q [2]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr3~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr3~0 .lut_mask = 16'hEDD8;
+defparam \numtosevenseg|WideOr3~0 .lut_mask = 16'hEBAC;
 defparam \numtosevenseg|WideOr3~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N16
+// Location: LCCOMB_X52_Y53_N18
 fiftyfivenm_lcell_comb \numtosevenseg|WideOr2~0 (
 // Equation(s):
-// \numtosevenseg|WideOr2~0_combout  = (\dff4bit|q [2] & (((\dff4bit|q [3])))) # (!\dff4bit|q [2] & (\dff4bit|q [1] & ((\dff4bit|q [3]) # (!\dff4bit|q [0]))))
+// \numtosevenseg|WideOr2~0_combout  = (\dff4bit|q [2] & (\dff4bit|q [3])) # (!\dff4bit|q [2] & (\dff4bit|q [1] & ((\dff4bit|q [3]) # (!\dff4bit|q [0]))))
 
-	.dataa(\dff4bit|q [1]),
-	.datab(\dff4bit|q [3]),
-	.datac(\dff4bit|q [2]),
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [2]),
+	.datac(\dff4bit|q [1]),
 	.datad(\dff4bit|q [0]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr2~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr2~0 .lut_mask = 16'hC8CA;
+defparam \numtosevenseg|WideOr2~0 .lut_mask = 16'hA8B8;
 defparam \numtosevenseg|WideOr2~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X52_Y53_N20
+// Location: LCCOMB_X52_Y53_N8
 fiftyfivenm_lcell_comb \numtosevenseg|WideOr1~0 (
 // Equation(s):
-// \numtosevenseg|WideOr1~0_combout  = (\dff4bit|q [3] & (((\dff4bit|q [1]) # (\dff4bit|q [2])))) # (!\dff4bit|q [3] & (\dff4bit|q [2] & (\dff4bit|q [0] $ (\dff4bit|q [1]))))
+// \numtosevenseg|WideOr1~0_combout  = (\dff4bit|q [3] & ((\dff4bit|q [2]) # ((\dff4bit|q [1])))) # (!\dff4bit|q [3] & (\dff4bit|q [2] & (\dff4bit|q [1] $ (\dff4bit|q [0]))))
 
-	.dataa(\dff4bit|q [0]),
-	.datab(\dff4bit|q [3]),
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [2]),
 	.datac(\dff4bit|q [1]),
-	.datad(\dff4bit|q [2]),
+	.datad(\dff4bit|q [0]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr1~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr1~0 .lut_mask = 16'hDEC0;
+defparam \numtosevenseg|WideOr1~0 .lut_mask = 16'hACE8;
 defparam \numtosevenseg|WideOr1~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X54_Y53_N10
+// Location: LCCOMB_X51_Y53_N10
 fiftyfivenm_lcell_comb \numtosevenseg|WideOr0~0 (
 // Equation(s):
 // \numtosevenseg|WideOr0~0_combout  = (\dff4bit|q [1] & (\dff4bit|q [3])) # (!\dff4bit|q [1] & (\dff4bit|q [2] $ (((!\dff4bit|q [3] & \dff4bit|q [0])))))
 
-	.dataa(\dff4bit|q [1]),
-	.datab(\dff4bit|q [3]),
-	.datac(\dff4bit|q [2]),
-	.datad(\dff4bit|q [0]),
+	.dataa(\dff4bit|q [3]),
+	.datab(\dff4bit|q [0]),
+	.datac(\dff4bit|q [1]),
+	.datad(\dff4bit|q [2]),
 	.cin(gnd),
 	.combout(\numtosevenseg|WideOr0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \numtosevenseg|WideOr0~0 .lut_mask = 16'hC9D8;
+defparam \numtosevenseg|WideOr0~0 .lut_mask = 16'hABA4;
 defparam \numtosevenseg|WideOr0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Wed Mar 25 08:55:49 2026
+Wed Mar 25 13:48:48 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -44,13 +44,13 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 25 08:55:49 2026           ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 25 13:48:48 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; top                                             ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 66                                              ;
-;     Total combinational functions  ; 66                                              ;
+; Total logic elements               ; 55                                              ;
+;     Total combinational functions  ; 55                                              ;
 ;     Dedicated logic registers      ; 35                                              ;
 ; Total registers                    ; 35                                              ;
 ; Total pins                         ; 15                                              ;
@@ -162,7 +162,8 @@ on the Quartus Prime software download page.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -171,11 +172,11 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
-; top.v                            ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/top.v              ;         ;
-; dflipflop.v                      ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/dflipflop.v        ;         ;
-; counter.v                        ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/counter.v          ;         ;
-; clk_divider.v                    ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/clk_divider.v      ;         ;
-; bcd_to_seven_seg.v               ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/bcd_to_seven_seg.v ;         ;
+; ../hdl/top.v                     ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/top.v              ;         ;
+; ../hdl/dflipflop.v               ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/dflipflop.v        ;         ;
+; ../hdl/counter.v                 ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/counter.v          ;         ;
+; ../hdl/clk_divider.v             ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/clk_divider.v      ;         ;
+; ../hdl/bcd_to_seven_seg.v        ; yes             ; User Verilog HDL File  ; C:/Users/thyse/ECE3700Labs/lab_4/hdl/bcd_to_seven_seg.v ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
 
 
@@ -184,16 +185,16 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 66        ;
+; Estimated Total logic elements              ; 55        ;
 ;                                             ;           ;
-; Total combinational functions               ; 66        ;
+; Total combinational functions               ; 55        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 33        ;
+;     -- 4 input functions                    ; 22        ;
 ;     -- 3 input functions                    ; 2         ;
 ;     -- <=2 input functions                  ; 31        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 40        ;
+;     -- normal mode                          ; 29        ;
 ;     -- arithmetic mode                      ; 26        ;
 ;                                             ;           ;
 ; Total registers                             ; 35        ;
@@ -206,8 +207,8 @@ on the Quartus Prime software download page.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 31        ;
-; Total fan-out                               ; 299       ;
-; Average fan-out                             ; 2.28      ;
+; Total fan-out                               ; 255       ;
+; Average fan-out                             ; 2.12      ;
 +---------------------------------------------+-----------+
 
 
@@ -216,9 +217,9 @@ on the Quartus Prime software download page.
 +-----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name               ; Entity Name    ; Library Name ;
 +-----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+----------------+--------------+
-; |top                              ; 66 (3)              ; 35 (3)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |top                              ; top            ; work         ;
+; |top                              ; 55 (3)              ; 35 (3)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |top                              ; top            ; work         ;
 ;    |bcd_to_sev_seg:numtosevenseg| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|bcd_to_sev_seg:numtosevenseg ; bcd_to_sev_seg ; work         ;
-;    |clk_divider:clock_divider|    ; 49 (49)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clk_divider:clock_divider    ; clk_divider    ; work         ;
+;    |clk_divider:clock_divider|    ; 38 (38)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clk_divider:clock_divider    ; clk_divider    ; work         ;
 ;    |counter:count|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|counter:count                ; counter        ; work         ;
 ;    |dflipflop:dff4bit|            ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|dflipflop:dff4bit            ; dflipflop      ; work         ;
 +-----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+----------------+--------------+
@@ -258,17 +259,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 35                          ;
 ;     ENA               ; 4                           ;
 ;     plain             ; 31                          ;
-; cycloneiii_lcell_comb ; 67                          ;
+; cycloneiii_lcell_comb ; 56                          ;
 ;     arith             ; 26                          ;
 ;         2 data inputs ; 26                          ;
-;     normal            ; 41                          ;
+;     normal            ; 30                          ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 2                           ;
-;         4 data inputs ; 33                          ;
+;         4 data inputs ; 22                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.40                        ;
-; Average LUT depth     ; 2.93                        ;
+; Max LUT depth         ; 3.60                        ;
+; Average LUT depth     ; 2.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -277,7 +278,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -287,21 +288,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Wed Mar 25 08:55:44 2026
+    Info: Processing started: Wed Mar 25 13:48:37 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab_4 -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/thyse/ece3700labs/lab_4/hdl/top.v
     Info (12023): Found entity 1: top File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/top.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file dflipflop.v
-    Info (12023): Found entity 1: dflipflop File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/dflipflop.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file counter.v
-    Info (12023): Found entity 1: counter File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/counter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file clk_divider.v
-    Info (12023): Found entity 1: clk_divider File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/clk_divider.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_top_counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/thyse/ece3700labs/lab_4/hdl/tb_top_counter.v
     Info (12023): Found entity 1: tb_top_counter File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/tb_top_counter.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file bcd_to_seven_seg.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/thyse/ece3700labs/lab_4/hdl/dflipflop.v
+    Info (12023): Found entity 1: dflipflop File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/dflipflop.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/thyse/ece3700labs/lab_4/hdl/counter.v
+    Info (12023): Found entity 1: counter File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/thyse/ece3700labs/lab_4/hdl/clk_divider.v
+    Info (12023): Found entity 1: clk_divider File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/clk_divider.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/thyse/ece3700labs/lab_4/hdl/bcd_to_seven_seg.v
     Info (12023): Found entity 1: bcd_to_sev_seg File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/bcd_to_seven_seg.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "clk_divider" for hierarchy "clk_divider:clock_divider" File: C:/Users/thyse/ECE3700Labs/lab_4/hdl/top.v Line: 40
@@ -313,14 +314,14 @@ Info (12128): Elaborating entity "bcd_to_sev_seg" for hierarchy "bcd_to_sev_seg:
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 81 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 66 logic cells
+    Info (21061): Implemented 55 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Wed Mar 25 08:55:49 2026
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Wed Mar 25 13:48:48 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 
