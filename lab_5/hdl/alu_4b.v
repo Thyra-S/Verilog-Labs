@@ -2,7 +2,7 @@ module alu_4b(
     input wire [3:0] r1,
     input wire [3:0] r2,
     input wire [1:0] ctrl,
-    output wire [4:0] r_out
+    output wire [3:0] r_out
 );
 
 wire [4:0] sum, or_out, xor_out, not_out;

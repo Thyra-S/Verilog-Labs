@@ -8,7 +8,8 @@ module cpu(
     output wire [6:0] seven_seg
 );
 
-wire [3:0] bus, r1_w, r2_w, r_out_iw, r_out_ow;
+tri [3:0] bus;
+wire [3:0] r1_w, r2_w, r_out_iw, r_out_ow;
 
 tristate_4b in_tri(
     .in(switches),
@@ -34,7 +35,7 @@ register_4b r2 (
 
 alu_4b alu (
     .r1(r1_w),
-    .r2(r2_2),
+    .r2(r2_w),
     .ctrl(alu_ctrl),
     .r_out(r_out_iw)
 );

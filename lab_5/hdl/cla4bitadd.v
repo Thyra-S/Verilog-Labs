@@ -2,7 +2,8 @@ module cla4bitadd(
     input wire [3:0] a,
     input wire [3:0] b,
     input wire cin,
-    output wire [4:0] sum
+    output wire cout;
+    output wire [3:0] sum
 );
 
 wire [3:0] wc, wp, wg;
@@ -47,6 +48,6 @@ fulladder adder3(
     .cout(open)
 );
 
-assign sum[4] = wg[3] | (wp[3] & wc[3]);
+assign cout = wg[3] | (wp[3] & wc[3]);
 
 endmodule
