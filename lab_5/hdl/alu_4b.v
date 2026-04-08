@@ -24,9 +24,9 @@ assign not_out[3:0] = {1'b0, (~r1)};
  01 = xor_out
  00 = not_out 
 */
-assign r_out = (ctrl == 2'b11) ? sum :
+assign r_out = (ctrl == 2'b11) ? sum    :
                (ctrl == 2'b10) ? or_out :
-               (ctrl == 2'b01) ? xor_out : 
-                                    not_out;
+               (ctrl == 2'b01) ? xor_out: 
+                                 not_out;
 
 endmodule
