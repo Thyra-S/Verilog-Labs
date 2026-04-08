@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "seven_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_ctrl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_ctrl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regs_en[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

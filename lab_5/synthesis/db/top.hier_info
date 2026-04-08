@@ -1,0 +1,273 @@
+|cpu
+switches[0] => switches[0].IN1
+switches[1] => switches[1].IN1
+switches[2] => switches[2].IN1
+switches[3] => switches[3].IN1
+regs_en[0] => regs_en[0].IN1
+regs_en[1] => regs_en[1].IN1
+regs_en[2] => regs_en[2].IN1
+bufs_en[0] => bufs_en[0].IN1
+bufs_en[1] => bufs_en[1].IN1
+alu_ctrl[0] => alu_ctrl[0].IN1
+alu_ctrl[1] => alu_ctrl[1].IN1
+reset => reset.IN3
+clk => clk.IN3
+seven_seg[0] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+seven_seg[1] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+seven_seg[2] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+seven_seg[3] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+seven_seg[4] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+seven_seg[5] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+seven_seg[6] <= bcd_to_sev_seg:num_to_sev_seg.seven_seg
+
+
+|cpu|tristate_4b:in_tri
+in[0] => ~NO_FANOUT~
+in[1] => ~NO_FANOUT~
+in[2] => ~NO_FANOUT~
+in[3] => ~NO_FANOUT~
+ctrl => ~NO_FANOUT~
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|register_4b:r1
+in[0] => out[0]~reg0.DATAIN
+in[1] => out[1]~reg0.DATAIN
+in[2] => out[2]~reg0.DATAIN
+in[3] => out[3]~reg0.DATAIN
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+reset => out[0]~reg0.ACLR
+reset => out[1]~reg0.ACLR
+reset => out[2]~reg0.ACLR
+reset => out[3]~reg0.ACLR
+enable => out[3]~reg0.ENA
+enable => out[2]~reg0.ENA
+enable => out[1]~reg0.ENA
+enable => out[0]~reg0.ENA
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|register_4b:r2
+in[0] => out[0]~reg0.DATAIN
+in[1] => out[1]~reg0.DATAIN
+in[2] => out[2]~reg0.DATAIN
+in[3] => out[3]~reg0.DATAIN
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+reset => out[0]~reg0.ACLR
+reset => out[1]~reg0.ACLR
+reset => out[2]~reg0.ACLR
+reset => out[3]~reg0.ACLR
+enable => out[3]~reg0.ENA
+enable => out[2]~reg0.ENA
+enable => out[1]~reg0.ENA
+enable => out[0]~reg0.ENA
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu
+r1[0] => r1[0].IN1
+r1[1] => r1[1].IN1
+r1[2] => r1[2].IN1
+r1[3] => r1[3].IN1
+r2[0] => r2[0].IN1
+r2[1] => r2[1].IN1
+r2[2] => r2[2].IN1
+r2[3] => r2[3].IN1
+ctrl[0] => Equal0.IN1
+ctrl[0] => Equal1.IN1
+ctrl[0] => Equal2.IN0
+ctrl[1] => Equal0.IN0
+ctrl[1] => Equal1.IN0
+ctrl[1] => Equal2.IN1
+r_out[0] <= r_out.DB_MAX_OUTPUT_PORT_TYPE
+r_out[1] <= r_out.DB_MAX_OUTPUT_PORT_TYPE
+r_out[2] <= r_out.DB_MAX_OUTPUT_PORT_TYPE
+r_out[3] <= r_out.DB_MAX_OUTPUT_PORT_TYPE
+r_out[4] <= r_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => wc[0].IN1
+sum[0] <= fulladder:adder0.sum
+sum[1] <= fulladder:adder1.sum
+sum[2] <= fulladder:adder2.sum
+sum[3] <= fulladder:adder3.sum
+sum[4] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder0
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder0|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder0|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder1|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder1|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder2|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder2|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfadder:ha2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder3|halfadder:ha1
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|alu_4b:alu|cla4bitadd:adder|fulladder:adder3|halfadder:ha2
+a => cout.IN0
+a => sum.IN0
+b => cout.IN1
+b => sum.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|register_4b:r_out
+in[0] => out[0]~reg0.DATAIN
+in[1] => out[1]~reg0.DATAIN
+in[2] => out[2]~reg0.DATAIN
+in[3] => out[3]~reg0.DATAIN
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+reset => out[0]~reg0.ACLR
+reset => out[1]~reg0.ACLR
+reset => out[2]~reg0.ACLR
+reset => out[3]~reg0.ACLR
+enable => out[3]~reg0.ENA
+enable => out[2]~reg0.ENA
+enable => out[1]~reg0.ENA
+enable => out[0]~reg0.ENA
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|tristate_4b:out_tri
+in[0] => ~NO_FANOUT~
+in[1] => ~NO_FANOUT~
+in[2] => ~NO_FANOUT~
+in[3] => ~NO_FANOUT~
+ctrl => ~NO_FANOUT~
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu|bcd_to_sev_seg:num_to_sev_seg
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seven_seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

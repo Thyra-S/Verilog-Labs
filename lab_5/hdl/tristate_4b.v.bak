@@ -4,6 +4,6 @@ module tristate_4b (
     output wire [3:0] out
 );
 
-assign out = (ctrl) ? out : 4'bzzzz;
+assign out = (cntrl) ? out : 4'bzzzz;
 
 endmodule
