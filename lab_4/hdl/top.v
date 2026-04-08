@@ -3,12 +3,11 @@ module top(
     input wire stop,
     input wire reset,
     input wire clk,
-    output wire [0:6] seven_seg,
-	output wire [3:0] seven_seg_num
+    output wire [0:6] seven_seg
 );
 
     wire slw_clk;
-    wire [3:0] next_num;
+    wire [3:0] next_num, seven_seg_num;
 
     reg running;
 	 reg stopreg;

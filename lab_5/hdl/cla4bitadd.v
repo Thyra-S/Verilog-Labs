@@ -1,0 +1,52 @@
+module cla4bitadd(
+    input wire [3:0] a,
+    input wire [3:0] b,
+    input wire cin,
+    output wire [4:0] sum
+);
+
+wire [3:0] wc, wp, wg;
+wire open;
+assign wg = a & b;
+assign wp = a | b;
+
+assign wc[0] = cin;
+assign wc[1] = wg[0] | (wp[0] & wc[0]);
+assign wc[2] = wg[1] | (wp[1] & wc[1]);
+assign wc[3] = wg[2] | (wp[2] & wc[2]);
+
+fulladder adder0(
+    .a(a[0]),
+    .b(b[0]),
+    .cin(wc[0]),
+    .sum(sum[0]),
+    .cout(open)
+);
+
+fulladder adder1(
+    .a(a[1]),
+    .b(b[1]),
+    .cin(wc[1]),
+    .sum(sum[1]),
+    .cout(open)
+);
+
+fulladder adder2(
+    .a(a[2]),
+    .b(b[2]),
+    .cin(wc[2]),
+    .sum(sum[2]),
+    .cout(open)
+);
+
+fulladder adder3(
+    .a(a[3]),
+    .b(b[3]),
+    .cin(wc[3]),
+    .sum(sum[3]),
+    .cout(open)
+);
+
+assign sum[4] = wg[3] | (wp[3] & wc[3]);
+
+endmodule
