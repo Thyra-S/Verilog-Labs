@@ -5,18 +5,20 @@ module alu_4b(
     output wire [3:0] r_out
 );
 
-wire [4:0] sum, or_out, xor_out, not_out;
+wire [3:0] sum, or_out, xor_out, not_out;
+wire carry_out;
 
 cla4bitadd adder(
     .a(r1),
     .b(r2),
     .cin(0),
+    .cout(carry_out),
     .sum(sum)
 );
 
-assign or_out[3:0] = {1'b0, (r1 | r2)};
-assign xor_out[3:0] = {1'b0, (r1 ^ r2)};
-assign not_out[3:0] = {1'b0, (~r1)};
+assign or_out[3:0]  = (r1 | r2);
+assign xor_out[3:0] = (r1 ^ r2);
+assign not_out[3:0] = (~r1);
 
 /*  Multiplexer logic:
  11 = add

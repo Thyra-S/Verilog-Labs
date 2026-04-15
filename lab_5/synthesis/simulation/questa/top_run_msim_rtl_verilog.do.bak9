@@ -1,0 +1,25 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/halfadder.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/fulladder.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/fsm.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/tristate_4b.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/register_4b.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/cpu.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/cla4bitadd.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/bcd_to_seven_seg.v}
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/alu_4b.v}
+
+vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl {C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl/tb_cpu.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_cpu
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,100 @@
+`timescale 1ns / 1ps
+
+module tb_cpu;
+
+    // Inputs
+    reg [3:0] switches;
+    reg [2:0] regs_en;
+    reg [1:0] bufs_en;
+    reg [1:0] alu_ctrl;
+    reg reset;
+    reg clk;
+
+    // Outputs
+    wire [3:0] bcd;
+    wire [6:0] seven_seg;
+
+    // Instantiate the Unit Under Test (UUT)
+    cpu uut (
+        .switches(switches), 
+        .regs_en(regs_en), 
+        .bufs_en(bufs_en), 
+        .alu_ctrl(alu_ctrl), 
+        .reset(reset), 
+        .clk(clk), 
+        .bcd(bcd), 
+        .seven_seg(seven_seg)
+    );
+
+    // Clock generation (10ns period)
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; 
+    end
+
+    // Test sequence
+    initial begin
+        // 1. Initialize all control signals
+        switches = 4'b0000;
+        regs_en = 3'b000;
+        bufs_en = 2'b00;
+        alu_ctrl = 2'b00;
+        
+        // Assert reset
+        reset = 1;
+        #20; 
+        
+        // De-assert reset
+        reset = 0;
+        #10;
+
+        // ---------------------------------------------------------
+        // Step 1: Load the value 5 (4'b0101) into register 1 (r1)
+        // ---------------------------------------------------------
+        switches = 4'b0101; 
+        bufs_en = 2'b01;    // Enable in_tri (drive switches to bus)
+        regs_en = 3'b001;   // Enable r1 to capture from bus
+        #10; // Wait for 1 clock cycle
+        
+        // ---------------------------------------------------------
+        // Step 2: Load the value 3 (4'b0011) into register 2 (r2)
+        // ---------------------------------------------------------
+        switches = 4'b0011; 
+        bufs_en = 2'b01;    // Keep in_tri enabled
+        regs_en = 3'b010;   // Enable r2 to capture from bus
+        #10;
+
+        // ---------------------------------------------------------
+        // Step 3: Add r1 + r2, store in r_out
+        // ---------------------------------------------------------
+        bufs_en = 2'b00;    // Disable buffers (free the bus)
+        regs_en = 3'b100;   // Enable r_out to capture ALU output
+        alu_ctrl = 2'b11;   // ALU Control for ADD (5 + 3 = 8)
+        #10;
+
+        // ---------------------------------------------------------
+        // Step 4: Bitwise OR r1 | r2, store in r_out
+        // ---------------------------------------------------------
+        regs_en = 3'b100;   // Keep r_out enabled
+        alu_ctrl = 2'b10;   // ALU Control for OR (0101 | 0011 = 0111)
+        #10;
+
+        // ---------------------------------------------------------
+        // Step 5: Output r_out onto the bus
+        // ---------------------------------------------------------
+        regs_en = 3'b000;   // Disable all register writing
+        bufs_en = 2'b10;    // Enable out_tri (drive r_out to bus)
+        #20;
+
+        // End simulation
+        $display("Simulation Complete!");
+        $finish;
+    end
+
+    // Monitor outputs to the console
+    initial begin
+        $monitor("Time=%0t | rst=%b | switches=%b | r_en=%b | b_en=%b | alu_op=%b | bcd=%b | 7seg=%b", 
+                 $time, reset, switches, regs_en, bufs_en, alu_ctrl, bcd, seven_seg);
+    end
+
+endmodule

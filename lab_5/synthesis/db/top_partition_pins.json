@@ -4,15 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "seven_seg[0]",
+					"name" : "bcd[0]",
 					"strict" : false
 				},
 				{
-					"name" : "seven_seg[3]",
+					"name" : "bcd[1]",
 					"strict" : false
 				},
 				{
-					"name" : "seven_seg[4]",
+					"name" : "bcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg[6]",
 					"strict" : false
 				},
 				{
@@ -20,15 +28,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "alu_ctrl[0]",
+					"name" : "seven_seg[4]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_ctrl[1]",
+					"name" : "seven_seg[3]",
 					"strict" : false
 				},
 				{
-					"name" : "regs_en[2]",
+					"name" : "seven_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg[0]",
 					"strict" : false
 				},
 				{
@@ -37,6 +53,22 @@
 				},
 				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "input_switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_switches[3]",
 					"strict" : false
 				}
 			]

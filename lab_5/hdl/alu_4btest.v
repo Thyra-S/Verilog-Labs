@@ -1,0 +1,51 @@
+`timescale 1ns / 1ps
+
+module alu_4btest;
+
+reg [3:0] r1, r2; 
+wire [3:0] r_out;
+reg [1:0] ctrl;
+
+alu_4b my_alu (
+    .r1(r1),
+    .r2(r2),
+    .ctrl(ctrl),
+    .r_out(r_out)
+);
+
+integer i, error;
+
+initial begin
+        // Initialize all inputs to 0, but set reset to 1
+        r1 = 0;
+        r2 = 0;
+        ctrl = 0;
+        error = 0;
+        #10;
+        
+        for(i = 0; i <20; i = i +1) begin
+            r1 = $random % 16; // Random 4-bit value
+            r2 = $random % 16; // Random 4-bit value
+            ctrl = i %4; // Random control signal (0 to 3)
+            #10; // Wait for the ALU to compute the result
+            // Check the result based on the control signal
+            case(ctrl)
+                2'b00: if(r_out !== ~r1) error = error + 1; // NOT
+                2'b01: if(r_out !== (r1 ^ r2)) error = error + 1; // XOR
+                2'b10: if(r_out !== (r1 | r2)) error = error + 1; // OR
+                2'b11: if(r_out !== ((r1 + r2) % 16)) error = error + 1; // ADD (modulo 16)
+            endcase
+        end
+
+        
+
+    end
+
+    // Optional: Print output to the console whenever seven_seg changes
+    initial begin
+        $monitor("Time=%0t | r1=%b | r2=%b | ctrl=%b | r_out=%b", 
+                 $time, r1, r2, ctrl, r_out);
+    end
+
+
+endmodule

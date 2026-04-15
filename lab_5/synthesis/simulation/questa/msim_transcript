@@ -1,0 +1,468 @@
+# Reading pref.tcl
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Altera Starter FPGA Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
+# vmap work rtl_work 
+# ** Note: (vmap-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# Copying c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/halfadder.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:51 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/halfadder.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module halfadder
+# 
+# Top level modules:
+# 	halfadder
+# End time: 11:27:51 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/fulladder.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:51 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/fulladder.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 11:27:51 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/fsm.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:51 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/fsm.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+# End time: 11:27:51 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/tristate_4b.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:52 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/tristate_4b.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module tristate_4b
+# 
+# Top level modules:
+# 	tristate_4b
+# End time: 11:27:52 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/register_4b.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:52 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/register_4b.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module register_4b
+# 
+# Top level modules:
+# 	register_4b
+# End time: 11:27:52 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/cpu.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:52 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/cpu.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 11:27:52 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/cla4bitadd.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:52 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/cla4bitadd.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module cla4bitadd
+# 
+# Top level modules:
+# 	cla4bitadd
+# End time: 11:27:52 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/bcd_to_seven_seg.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:53 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/bcd_to_seven_seg.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module bcd_to_sev_seg
+# 
+# Top level modules:
+# 	bcd_to_sev_seg
+# End time: 11:27:53 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl {C:/Users/thyse/ECE3700Labs/lab_5/hdl/alu_4b.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:53 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/hdl" C:/Users/thyse/ECE3700Labs/lab_5/hdl/alu_4b.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module alu_4b
+# 
+# Top level modules:
+# 	alu_4b
+# End time: 11:27:53 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog  -work work +incdir+C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl {C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl/tb_cpu.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 11:27:53 on Apr 15,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl" C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl/tb_cpu.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module tb_cpu
+# 
+# Top level modules:
+# 	tb_cpu
+# End time: 11:27:53 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_cpu
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_cpu 
+# Start time: 11:27:54 on Apr 15,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_cpu(fast)
+# Loading work.cpu(fast)
+# Loading work.tristate_4b(fast)
+# Loading work.register_4b(fast)
+# Loading work.alu_4b(fast)
+# Loading work.cla4bitadd(fast)
+# Loading work.fulladder(fast)
+# Loading work.halfadder(fast)
+# Loading work.bcd_to_sev_seg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/thyse/ECE3700Labs/lab_5/hdl/cla4bitadd.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu/uut/alu/adder File: C:/Users/thyse/ECE3700Labs/lab_5/hdl/alu_4b.v Line: 11
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=0 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# ========================================
+#  TESTING STARTING INPUT: 0
+# ========================================
+# Time=30000 | switches=0000 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=40000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=50000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=55000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0011
+# Time=60000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0011
+# Time=70000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0011
+# Time=80000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0011
+# Time=90000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0011
+# Time=95000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1100
+# Time=100000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1100
+# Time=110000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1100
+# Time=115000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1111
+# --> Final Result (bcd out) for input 0 is: 1111
+# 
+# ========================================
+#  TESTING STARTING INPUT: 1
+# ========================================
+# Time=130000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=150000 | switches=0001 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=160000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=170000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=175000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0100
+# Time=180000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0100
+# Time=190000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0100
+# Time=195000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0101
+# Time=200000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0101
+# Time=210000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0101
+# Time=215000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1010
+# Time=220000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1010
+# Time=230000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1010
+# Time=235000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1110
+# --> Final Result (bcd out) for input 1 is: 1110
+# 
+# ========================================
+#  TESTING STARTING INPUT: 2
+# ========================================
+# Time=250000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=270000 | switches=0010 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=280000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=290000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=295000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0101
+# Time=300000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0101
+# Time=310000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0101
+# Time=315000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0111
+# Time=320000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0111
+# Time=330000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0111
+# Time=335000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1000
+# Time=340000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1000
+# Time=350000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1000
+# Time=355000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1101
+# --> Final Result (bcd out) for input 2 is: 1101
+# 
+# ========================================
+#  TESTING STARTING INPUT: 3
+# ========================================
+# Time=370000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=390000 | switches=0011 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=400000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=410000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=415000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0110
+# Time=420000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0110
+# Time=430000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0110
+# Time=435000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0111
+# Time=440000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0111
+# Time=450000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0111
+# Time=455000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1000
+# Time=460000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1000
+# Time=470000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1000
+# Time=475000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1110
+# --> Final Result (bcd out) for input 3 is: 1110
+# 
+# ========================================
+#  TESTING STARTING INPUT: 4
+# ========================================
+# Time=490000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=510000 | switches=0100 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=520000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=530000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=535000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0111
+# Time=540000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0111
+# Time=550000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0111
+# Time=560000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0111
+# Time=570000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0111
+# Time=575000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1000
+# Time=580000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1000
+# Time=590000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1000
+# Time=595000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1111
+# --> Final Result (bcd out) for input 4 is: 1111
+# 
+# ========================================
+#  TESTING STARTING INPUT: 5
+# ========================================
+# Time=610000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=630000 | switches=0101 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=640000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=650000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=655000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1000
+# Time=660000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1000
+# Time=670000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1000
+# Time=675000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1101
+# Time=680000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1101
+# Time=690000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1101
+# Time=695000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0010
+# Time=700000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0010
+# Time=710000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0010
+# Time=715000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1010
+# --> Final Result (bcd out) for input 5 is: 1010
+# 
+# ========================================
+#  TESTING STARTING INPUT: 6
+# ========================================
+# Time=730000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=750000 | switches=0110 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=760000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=770000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=775000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1001
+# Time=780000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1001
+# Time=790000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1001
+# Time=795000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=800000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=810000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=815000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=820000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=830000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=835000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1001
+# --> Final Result (bcd out) for input 6 is: 1001
+# 
+# ========================================
+#  TESTING STARTING INPUT: 7
+# ========================================
+# Time=850000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=870000 | switches=0111 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=880000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=890000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=895000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1010
+# Time=900000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1010
+# Time=910000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1010
+# Time=915000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=920000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=930000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=935000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=940000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=950000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=955000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1010
+# --> Final Result (bcd out) for input 7 is: 1010
+# 
+# ========================================
+#  TESTING STARTING INPUT: 8
+# ========================================
+# Time=970000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=990000 | switches=1000 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1000000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1010000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1015000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1011
+# Time=1020000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1011
+# Time=1030000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1011
+# Time=1040000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1011
+# Time=1050000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1011
+# Time=1055000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0100
+# Time=1060000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0100
+# Time=1070000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0100
+# Time=1075000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1111
+# --> Final Result (bcd out) for input 8 is: 1111
+# 
+# ========================================
+#  TESTING STARTING INPUT: 9
+# ========================================
+# Time=1090000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1110000 | switches=1001 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1120000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1130000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1135000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1100
+# Time=1140000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1100
+# Time=1150000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1100
+# Time=1155000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1101
+# Time=1160000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1101
+# Time=1170000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1101
+# Time=1175000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0010
+# Time=1180000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0010
+# Time=1190000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0010
+# Time=1195000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1110
+# --> Final Result (bcd out) for input 9 is: 1110
+# 
+# ========================================
+#  TESTING STARTING INPUT: 10
+# ========================================
+# Time=1210000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1230000 | switches=1010 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1240000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1250000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1255000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1101
+# Time=1260000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1101
+# Time=1270000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1101
+# Time=1275000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=1280000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=1290000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=1295000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=1300000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1310000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=1315000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1101
+# --> Final Result (bcd out) for input 10 is: 1101
+# 
+# ========================================
+#  TESTING STARTING INPUT: 11
+# ========================================
+# Time=1330000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1350000 | switches=1011 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1360000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1370000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1375000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1110
+# Time=1380000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1110
+# Time=1390000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1110
+# Time=1395000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=1400000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=1410000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=1415000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=1420000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1430000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=1435000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1110
+# --> Final Result (bcd out) for input 11 is: 1110
+# 
+# ========================================
+#  TESTING STARTING INPUT: 12
+# ========================================
+# Time=1450000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1470000 | switches=1100 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1480000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1490000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1495000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=1111
+# Time=1500000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=1111
+# Time=1510000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=1520000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=1530000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=1535000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=1540000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1550000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=1555000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=1111
+# --> Final Result (bcd out) for input 12 is: 1111
+# 
+# ========================================
+#  TESTING STARTING INPUT: 13
+# ========================================
+# Time=1570000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1590000 | switches=1101 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1600000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1610000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1620000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1630000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0000
+# Time=1635000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1101
+# Time=1640000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1101
+# Time=1650000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1101
+# Time=1655000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0010
+# Time=1660000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0010
+# Time=1670000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0010
+# --> Final Result (bcd out) for input 13 is: 0010
+# 
+# ========================================
+#  TESTING STARTING INPUT: 14
+# ========================================
+# Time=1690000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1710000 | switches=1110 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1720000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1730000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1735000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0001
+# Time=1740000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0001
+# Time=1750000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0001
+# Time=1755000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=1760000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=1770000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=1775000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=1780000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1790000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=1795000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0001
+# --> Final Result (bcd out) for input 14 is: 0001
+# 
+# ========================================
+#  TESTING STARTING INPUT: 15
+# ========================================
+# Time=1810000 | switches=0000 | b_en=00 | r_en=000 | alu_op=00 | bcd(r_out)=0000
+# Time=1830000 | switches=1111 | b_en=01 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1840000 | switches=0011 | b_en=01 | r_en=010 | alu_op=00 | bcd(r_out)=0000
+# Time=1850000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0000
+# Time=1855000 | switches=0000 | b_en=00 | r_en=100 | alu_op=11 | bcd(r_out)=0010
+# Time=1860000 | switches=0000 | b_en=10 | r_en=010 | alu_op=00 | bcd(r_out)=0010
+# Time=1870000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=0010
+# Time=1875000 | switches=0000 | b_en=00 | r_en=100 | alu_op=10 | bcd(r_out)=1111
+# Time=1880000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=1111
+# Time=1890000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=1111
+# Time=1895000 | switches=0000 | b_en=00 | r_en=100 | alu_op=00 | bcd(r_out)=0000
+# Time=1900000 | switches=0000 | b_en=10 | r_en=001 | alu_op=00 | bcd(r_out)=0000
+# Time=1910000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0000
+# Time=1915000 | switches=0000 | b_en=00 | r_en=100 | alu_op=01 | bcd(r_out)=0010
+# --> Final Result (bcd out) for input 15 is: 0010
+# 
+# Simulation Complete: Tested all 16 inputs.
+# ** Note: $finish    : C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl/tb_cpu.v(146)
+#    Time: 1930 ns  Iteration: 0  Instance: /tb_cpu
+# 1
+# Break in Module tb_cpu at C:/Users/thyse/ECE3700Labs/lab_5/synthesis/../hdl/tb_cpu.v line 146

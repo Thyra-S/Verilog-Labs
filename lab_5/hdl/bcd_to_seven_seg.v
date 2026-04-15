@@ -1,6 +1,6 @@
 module bcd_to_sev_seg(
     input [3:0] bcd,
-    output reg [6:0] seven_seg
+    output reg [0:6] seven_seg
 );
 
 always @*

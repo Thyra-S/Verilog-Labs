@@ -5,6 +5,7 @@ module cpu(
     input wire [1:0] alu_ctrl,
     input wire reset,
     input wire clk,
+	 output wire [3:0] bcd,
     output wire [6:0] seven_seg
 );
 
@@ -59,5 +60,6 @@ bcd_to_sev_seg num_to_sev_seg (
     .seven_seg(seven_seg)
 );
 
+assign bcd = r_out_ow;
 
 endmodule

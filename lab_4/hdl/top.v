@@ -64,7 +64,7 @@ endmodule
 PIN ASSIGNMENTS
 seven_seg[0] Output PIN_C14
 seven_seg[1] Output PIN_E15
-seven_seg[2] Output PIN_C15
+seven_seg[2] Output PIN_C15S
 seven_seg[3] Output PIN_C16
 seven_seg[4] Output PIN_E16
 seven_seg[5] Output PIN_D17
